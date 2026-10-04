@@ -2,6 +2,7 @@ name: Generate Payloads
 
 on:
   schedule:
+    # Runs at minute 0 of every hour
     - cron: '0 * * * *'
   workflow_dispatch:
   push:
@@ -30,6 +31,8 @@ jobs:
           pip install requests
 
       - name: Run payload generator
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python generate.py
 
       - name: Commit and push changes
@@ -37,4 +40,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add payloads.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update payloads.json" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update payloads.json [skip ci]" && git push)
