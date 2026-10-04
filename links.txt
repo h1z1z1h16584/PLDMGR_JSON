@@ -24,17 +24,10 @@ github:etaHEN/etaHEN
 github:itsPLK/ps5-payload-manager
 github:itsPLK/ps5-pkg-manager
 github:itsPLK/ps5-webkit-autoloader
-github:notmaj0r/CheatRunner
 github:owendswang/ps5-web-file-manager
-github:owendswang/wfm-7zip-helper
 github:phantomptr/ps5upload
 github:ps5-linux/ps5-linux-loader
 github:ps5-payload-dev/elfldr
-github:ps5-payload-dev/ftpsrv
-github:ps5-payload-dev/klogsrv
-github:ps5-payload-dev/shsrv
-github:ps5-payload-dev/websrv
-github:seregonwar/zftpd
 github:sinfiltros/AnyPad-PS5
 github:saawant12/orbit-store-ps5
 github:notmaj0r/ProsperoMgr
