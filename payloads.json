@@ -22,28 +22,6 @@
     "category": "System & Jailbreak"
   },
   {
-    "name": "kstuff",
-    "filename": "kstuff.elf",
-    "url": "https://github.com/EchoStretch/kstuff/releases/download/v1.6.7/kstuff.elf",
-    "source": "https://github.com/EchoStretch/kstuff/releases",
-    "source_direct": "https://github.com/EchoStretch/kstuff/releases/download/v1.6.7/kstuff.elf",
-    "description": "Kstuff 3.00-10.01",
-    "last_update": "2026-01-04",
-    "version": "v1.6.7",
-    "category": "System & Jailbreak"
-  },
-  {
-    "name": "lapy_jb_daemon",
-    "filename": "lapy_jb_daemon-v1.2.elf",
-    "url": "https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases/download/v1.2/lapy_jb_daemon-v1.2.elf",
-    "source": "https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases",
-    "source_direct": "https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases/download/v1.2/lapy_jb_daemon-v1.2.elf",
-    "description": "lapyjbdaemon payload",
-    "last_update": "2026-06-01",
-    "version": "v1.2",
-    "category": "System & Jailbreak"
-  },
-  {
     "name": "OnionHEN",
     "filename": "OnionHEN.elf",
     "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
@@ -63,6 +41,17 @@
     "description": "PIZZA HEN v2.00 — Release Notes",
     "last_update": "2026-08-24",
     "version": "v2.00",
+    "category": "System & Jailbreak"
+  },
+  {
+    "name": "pkg-manager",
+    "filename": "pkg-manager_v1.4.1.elf",
+    "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.4.1/pkg-manager_v1.4.1.elf",
+    "source": "https://github.com/itsPLK/ps5-pkg-manager/releases",
+    "source_direct": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.4.1/pkg-manager_v1.4.1.elf",
+    "description": "- Fixed USB and disc installs failing when the console had no active network connection. Installation progress is not shown in PKG Manager in this mode due to a PS5 system...",
+    "last_update": "2026-09-27",
+    "version": "v1.4.1",
     "category": "System & Jailbreak"
   },
   {
@@ -341,17 +330,6 @@
     "category": "Utilities & Tools"
   },
   {
-    "name": "bfpilot",
-    "filename": "bfpilot.elf",
-    "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.4/bfpilot.elf",
-    "source": "https://github.com/ItsBlurf/BFpilot/releases",
-    "source_direct": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.4/bfpilot.elf",
-    "description": "v0.4.4 brings the installer, Media tile, archive support and file manager together in one bfpilot.elf.",
-    "last_update": "2026-08-11",
-    "version": "v0.4.4",
-    "category": "Utilities & Tools"
-  },
-  {
     "name": "CheatRunner",
     "filename": "CheatRunner.elf",
     "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
@@ -374,25 +352,25 @@
     "category": "Utilities & Tools"
   },
   {
-    "name": "MemDBG",
-    "filename": "MemDBG-ps4.elf",
-    "url": "https://github.com/seregonwar/MemDBG/releases/download/nightly-20260930-g6e493c9/MemDBG-ps4.elf",
-    "source": "https://github.com/seregonwar/MemDBG/releases",
-    "source_direct": "https://github.com/seregonwar/MemDBG/releases/download/nightly-20260930-g6e493c9/MemDBG-ps4.elf",
-    "description": "Automated historical nightly built from the latest main branch.",
-    "last_update": "2026-09-30",
-    "version": "nightly-20260930-g6e493c9",
+    "name": "garlic-savemgr",
+    "filename": "garlic-savemgr.elf",
+    "url": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.7/garlic-savemgr.elf",
+    "source": "https://github.com/earthonion/garlic-savemgr/releases",
+    "source_direct": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.7/garlic-savemgr.elf",
+    "description": "What's New",
+    "last_update": "2026-03-16",
+    "version": "v1.7",
     "category": "Utilities & Tools"
   },
   {
-    "name": "MemDBG",
-    "filename": "MemDBG-ps5.elf",
-    "url": "https://github.com/seregonwar/MemDBG/releases/download/nightly-20260930-g6e493c9/MemDBG-ps5.elf",
-    "source": "https://github.com/seregonwar/MemDBG/releases",
-    "source_direct": "https://github.com/seregonwar/MemDBG/releases/download/nightly-20260930-g6e493c9/MemDBG-ps5.elf",
-    "description": "Automated historical nightly built from the latest main branch.",
-    "last_update": "2026-09-30",
-    "version": "nightly-20260930-g6e493c9",
+    "name": "orbit_store",
+    "filename": "orbit_store.elf",
+    "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.4.2/orbit_store.elf",
+    "source": "https://github.com/saawant12/orbit-store-ps5/releases",
+    "source_direct": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.4.2/orbit_store.elf",
+    "description": "Orbit Store 0.4.2",
+    "last_update": "2026-10-04",
+    "version": "v0.4.2",
     "category": "Utilities & Tools"
   },
   {
@@ -410,7 +388,7 @@
     "name": "pldmgr",
     "filename": "pldmgr_v0.5.2.elf",
     "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.2/pldmgr_v0.5.2.elf",
-    "source": "https://github.com/itsPLK/pldmgr/releases",
+    "source": "https://github.com/itsPLK/ps5-payload-manager/releases",
     "source_direct": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.2/pldmgr_v0.5.2.elf",
     "description": "- Rebuilt with latest SDK (FW 13.60 support)",
     "last_update": "2026-09-29",
@@ -451,6 +429,17 @@
     "category": "Utilities & Tools"
   },
   {
+    "name": "ProsperoMgr",
+    "filename": "ProsperoMgr.elf",
+    "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.1/ProsperoMgr.elf",
+    "source": "https://github.com/notmaj0r/ProsperoMgr/releases",
+    "source_direct": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.1/ProsperoMgr.elf",
+    "description": "Prospero Manager v1.1",
+    "last_update": "2026-09-28",
+    "version": "v1.1",
+    "category": "Utilities & Tools"
+  },
+  {
     "name": "ps5-app-dumper",
     "filename": "ps5-app-dumper_v2.10.elf",
     "url": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.10/ps5-app-dumper_v2.10.elf",
@@ -462,25 +451,69 @@
     "category": "Utilities & Tools"
   },
   {
-    "name": "ps5-backpork",
-    "filename": "ps5-backpork.elf",
-    "url": "https://github.com/BestPig/BackPork/releases/download/0.1/ps5-backpork.elf",
-    "source": "https://github.com/BestPig/BackPork/releases",
-    "source_direct": "https://github.com/BestPig/BackPork/releases/download/0.1/ps5-backpork.elf",
-    "description": "Initial oink release 🐽",
-    "last_update": "2026-04-30",
-    "version": "0.1",
+    "name": "ps5-date-time-sync",
+    "filename": "ps5-date-time-sync.elf",
+    "url": "https://github.com/kerrdec97/ps5-date-time-sync/releases/download/v1.0.0/ps5-date-time-sync.elf",
+    "source": "https://github.com/kerrdec97/ps5-date-time-sync/releases",
+    "source_direct": "https://github.com/kerrdec97/ps5-date-time-sync/releases/download/v1.0.0/ps5-date-time-sync.elf",
+    "description": "PS5 Time & Date Sync by Deckerr97",
+    "last_update": "2026-08-24",
+    "version": "v1.0.0",
+    "category": "Utilities & Tools"
+  },
+  {
+    "name": "ps5-dualsense-overlay",
+    "filename": "ps5-dualsense-overlay-v1.0.0.elf",
+    "url": "https://github.com/erickdavestech/ps5-dualsense-overlay/releases/download/v1.0.0/ps5-dualsense-overlay-v1.0.0.elf",
+    "source": "https://github.com/erickdavestech/ps5-dualsense-overlay/releases",
+    "source_direct": "https://github.com/erickdavestech/ps5-dualsense-overlay/releases/download/v1.0.0/ps5-dualsense-overlay-v1.0.0.elf",
+    "description": "On-screen DualSense controller overlay for a PS5 running homebrew. Load it once per boot, open any game, and the controller appears bottom-left, lighting up in real time.",
+    "last_update": "2026-10-04",
+    "version": "v1.0.0",
+    "category": "Utilities & Tools"
+  },
+  {
+    "name": "PS5.Custom.Tool.Manager.V1",
+    "filename": "PS5.Custom.Tool.Manager.V1.elf",
+    "url": "https://github.com/NikoBellikJR31/PS5-Custom-Tool-Manager-/releases/download/Custom/PS5.Custom.Tool.Manager.V1.elf",
+    "source": "https://github.com/NikoBellikJR31/PS5-Custom-Tool-Manager-/releases",
+    "source_direct": "https://github.com/NikoBellikJR31/PS5-Custom-Tool-Manager-/releases/download/Custom/PS5.Custom.Tool.Manager.V1.elf",
+    "description": "Version V1",
+    "last_update": "2026-06-04",
+    "version": "Custom",
     "category": "Utilities & Tools"
   },
   {
     "name": "ps5debug-NG",
     "filename": "ps5debug-NG_v1.3.2.elf",
     "url": "https://github.com/Pharaoh2k/ps5debug-NG/releases/download/1.3.2/ps5debug-NG_v1.3.2.elf",
-    "source": "https://github.com/OpenSourcereR-dev/ps5debug-NG/releases",
+    "source": "https://github.com/Pharaoh2k/ps5debug-NG/releases",
     "source_direct": "https://github.com/Pharaoh2k/ps5debug-NG/releases/download/1.3.2/ps5debug-NG_v1.3.2.elf",
     "description": "ps5debug-NG v1.3.2",
     "last_update": "2026-09-23",
     "version": "1.3.2",
+    "category": "Utilities & Tools"
+  },
+  {
+    "name": "PS5SX2Installer",
+    "filename": "PS5SX2Installer.elf",
+    "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-128/PS5SX2Installer.elf",
+    "source": "https://github.com/Swordpdf/PS5SX2/releases",
+    "source_direct": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-128/PS5SX2Installer.elf",
+    "description": "PS5SX2 1.85 (build vk-285-128)",
+    "last_update": "2026-10-04",
+    "version": "vk-285-128",
+    "category": "Utilities & Tools"
+  },
+  {
+    "name": "PS5SXHelper",
+    "filename": "PS5SXHelper.elf",
+    "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-128/PS5SXHelper.elf",
+    "source": "https://github.com/Swordpdf/PS5SX2/releases",
+    "source_direct": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-128/PS5SXHelper.elf",
+    "description": "PS5SX2 1.85 (build vk-285-128)",
+    "last_update": "2026-10-04",
+    "version": "vk-285-128",
     "category": "Utilities & Tools"
   },
   {
@@ -492,6 +525,28 @@
     "description": "New in 2.1 UPDATE",
     "last_update": "2026-08-14",
     "version": "2.1",
+    "category": "Utilities & Tools"
+  },
+  {
+    "name": "SpectrumLibrary",
+    "filename": "SpectrumLibrary_1.4.8.elf",
+    "url": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.8/SpectrumLibrary_1.4.8.elf",
+    "source": "https://github.com/Phoenixx1202/Spectrum-Library/releases",
+    "source_direct": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.8/SpectrumLibrary_1.4.8.elf",
+    "description": "Spectrum Library 1.4.8",
+    "last_update": "2026-10-01",
+    "version": "1.4.8",
+    "category": "Utilities & Tools"
+  },
+  {
+    "name": "unrar",
+    "filename": "unrar_ps5.elf",
+    "url": "https://github.com/bizkut/unrar-ps5/releases/download/v1.4.0/unrar_ps5.elf",
+    "source": "https://github.com/bizkut/unrar-ps5/releases",
+    "source_direct": "https://github.com/bizkut/unrar-ps5/releases/download/v1.4.0/unrar_ps5.elf",
+    "description": "Changes",
+    "last_update": "2026-06-18",
+    "version": "v1.4.0",
     "category": "Utilities & Tools"
   },
   {
