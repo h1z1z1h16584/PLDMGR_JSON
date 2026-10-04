@@ -7,14 +7,11 @@ github:bizkut/unrar-ps5
 github:aydencharles/onionHEN
 github:pegasus-ps5/pegasus-dl
 github:ItsBlurf/PoorDS4
-github:StonedModder/Ghostcontrol-PS5-USB-Controller-Patcher
 github:Michele-M-Media/PIZZA-HEN
 github:MounirHero/PS-Play
-github:sainsaji/EVO-PLAYER-PS5
 github:pegasus-ps5/pegasus-dl
 github:Phoenixx1202/Spectrum-Library
 github:kerrdec97/ps5-date-time-sync
-github:blackbearreloaded/ProsperoTV
 github:Pharaoh2k/ps5debug-NG
 github:notmaj0r/CheatRunner
 github:Swordpdf/PS5SX2
