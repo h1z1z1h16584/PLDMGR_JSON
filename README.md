@@ -2,7 +2,7 @@
 
 Custom payload repository for PS5 Payload Manager.
 
-Payload sources are automatically refreshed every 2 hours using GitHub Actions. The generated `payloads.json` contains validated payload download URLs and metadata.
+Payload sources are automatically refreshed every hour using GitHub Actions. The generated `payloads.json` contains validated payload download URLs and metadata.
 
 ## Adding this source
 
