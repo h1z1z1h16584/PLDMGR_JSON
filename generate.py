@@ -33,7 +33,7 @@ LINKS_FILE = "links.txt"
 OUTPUT_FILE = "payloads.json"
 
 # Supported payload file extensions
-VALID_EXTENSIONS = (".elf", ".bin", ".prx")
+VALID_EXTENSIONS = (".elf", ".bin", ".lua")
 
 token = os.getenv("GITHUB_TOKEN")
 headers = {
