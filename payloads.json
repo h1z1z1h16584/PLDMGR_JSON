@@ -323,10 +323,10 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v0.6.0.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.6.0/orbit_store.elf",
-      "description": "Orbit Store 0.6.0 (Beta) by saawant12",
-      "version": "v0.6.0",
+      "filename": "orbit_store_v0.6.1.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.6.1/orbit_store.elf",
+      "description": "Orbit Store 0.6.1 (Beta) by saawant12",
+      "version": "v0.6.1",
       "category": "Homebrew"
     },
     {
