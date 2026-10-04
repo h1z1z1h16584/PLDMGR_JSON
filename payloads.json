@@ -7,7 +7,7 @@
       "url": "https://github.com/juma-sayeh/PS5-Game-Compressor/releases/download/v1.0.4/game-compressor.elf",
       "description": "Game Compressor 1.0.4 by juma-sayeh",
       "version": "v1.0.4",
-      "category": "Homebrew"
+      "category": "Dumping & Backups"
     },
     {
       "name": "apr-emu-updater",
@@ -23,7 +23,7 @@
       "url": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.7/garlic-savemgr.elf",
       "description": "v1.7 by earthonion",
       "version": "v1.7",
-      "category": "Homebrew"
+      "category": "Dumping & Backups"
     },
     {
       "name": "garlic-savemgr [Pre-release]",
@@ -31,7 +31,7 @@
       "url": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.62b/garlic-savemgr.elf",
       "description": "v1.62b [Pre-release] by earthonion",
       "version": "v1.62b",
-      "category": "Homebrew"
+      "category": "Dumping & Backups"
     },
     {
       "name": "unrar-ps5",
@@ -39,7 +39,7 @@
       "url": "https://github.com/bizkut/unrar-ps5/releases/download/v1.4.0/unrar_ps5.elf",
       "description": "v1.4.0 by bizkut",
       "version": "v1.4.0",
-      "category": "Homebrew"
+      "category": "Dumping & Backups"
     },
     {
       "name": "onionHEN",
@@ -47,7 +47,7 @@
       "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
       "description": "OnionHEN v0.0.13 by aydencharles",
       "version": "v0.0.13",
-      "category": "Homebrew"
+      "category": "Kernel & Exploitation"
     },
     {
       "name": "onionHEN [Pre-release]",
@@ -55,7 +55,7 @@
       "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0-beta1/OnionHEN.elf",
       "description": "OnionHEN v0.9.0-beta1 [Pre-release] by aydencharles",
       "version": "v0.9.0-beta1",
-      "category": "Homebrew"
+      "category": "Kernel & Exploitation"
     },
     {
       "name": "pegasus-dl",
@@ -71,7 +71,7 @@
       "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4-status.elf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
       "version": "v0.1.0-rc51",
-      "category": "Homebrew"
+      "category": "Controllers & Input"
     },
     {
       "name": "PoorDS4",
@@ -79,7 +79,7 @@
       "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4-stop.elf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
       "version": "v0.1.0-rc51",
-      "category": "Homebrew"
+      "category": "Controllers & Input"
     },
     {
       "name": "PoorDS4",
@@ -87,7 +87,7 @@
       "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4rc51.elf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
       "version": "v0.1.0-rc51",
-      "category": "Homebrew"
+      "category": "Controllers & Input"
     },
     {
       "name": "PIZZA-HEN",
@@ -95,7 +95,7 @@
       "url": "https://github.com/Michele-M-Media/PIZZA-HEN/releases/download/v2.00/PIZZA-HEN-v2.00.elf",
       "description": "PIZZA HEN v2.00 - Complete I18N Final Gate by Michele-M-Media",
       "version": "v2.00",
-      "category": "Homebrew"
+      "category": "Kernel & Exploitation"
     },
     {
       "name": "PS-Play",
@@ -119,7 +119,7 @@
       "url": "https://github.com/kerrdec97/ps5-date-time-sync/releases/download/v1.0.0/ps5-date-time-sync.elf",
       "description": "PS5 Time & Date Sync v1.0.0 by kerrdec97",
       "version": "v1.0.0",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "ps5debug-NG",
@@ -127,7 +127,7 @@
       "url": "https://github.com/Pharaoh2k/ps5debug-NG/releases/download/1.3.2/ps5debug-NG_v1.3.2.elf",
       "description": "ps5debug-NG v1.3.2 by Pharaoh2k",
       "version": "1.3.2",
-      "category": "Homebrew"
+      "category": "Kernel & Exploitation"
     },
     {
       "name": "CheatRunner",
@@ -135,7 +135,7 @@
       "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
       "description": "v0.17.2 by notmaj0r",
       "version": "v0.17.2",
-      "category": "Homebrew"
+      "category": "Cheats"
     },
     {
       "name": "CheatRunner [Pre-release]",
@@ -143,7 +143,7 @@
       "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.16/CheatRunner.elf",
       "description": "v0.16 [Pre-release] by notmaj0r",
       "version": "v0.16",
-      "category": "Homebrew"
+      "category": "Cheats"
     },
     {
       "name": "PS5SX2",
@@ -167,7 +167,7 @@
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.16-ng-stable/ftpsrv-ps5.elf",
       "description": "ftpsrv 1.16-ng (stable) by drakmor",
       "version": "1.16-ng-stable",
-      "category": "Homebrew"
+      "category": "Networking"
     },
     {
       "name": "ftpsrv [Pre-release]",
@@ -175,7 +175,7 @@
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.6-ng-test2/ftpsrv-ps5-autopause.elf",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "version": "1.6-ng-test2",
-      "category": "Homebrew"
+      "category": "Networking"
     },
     {
       "name": "ftpsrv [Pre-release]",
@@ -183,7 +183,7 @@
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.6-ng-test2/ftpsrv-ps5.elf",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "version": "1.6-ng-test2",
-      "category": "Homebrew"
+      "category": "Networking"
     },
     {
       "name": "nanoDNS",
@@ -191,7 +191,7 @@
       "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns.elf",
       "description": "nanoDNS 0.4 by drakmor",
       "version": "0.4",
-      "category": "Homebrew"
+      "category": "Networking"
     },
     {
       "name": "ShadowMountPlus",
@@ -199,7 +199,7 @@
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta3/shadowmountplus.elf",
       "description": "ShadowMountPlus 1.7beta3 by drakmor",
       "version": "1.7beta3",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "ShadowMountPlus [Pre-release]",
@@ -207,7 +207,7 @@
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta4/shadowmountplus.elf",
       "description": "ShadowMountPlus 1.7beta4 [Pre-release] by drakmor",
       "version": "1.7beta4",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "kstuff-lite",
@@ -215,7 +215,7 @@
       "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.11/kstuff.elf",
       "description": "Kstuff Lite 1.11 Beta by EchoStretch",
       "version": "v1.11",
-      "category": "Homebrew"
+      "category": "Kernel & Exploitation"
     },
     {
       "name": "ps5-app-dumper",
@@ -223,7 +223,7 @@
       "url": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.10/ps5-app-dumper_v2.10.elf",
       "description": "PS5 App Dumper 2.00 Beta PS5 App Dumper 2.10 Beta by EchoStretch",
       "version": "v2.10",
-      "category": "Homebrew"
+      "category": "Dumping & Backups"
     },
     {
       "name": "etaHEN",
@@ -231,7 +231,7 @@
       "url": "https://github.com/etaHEN/etaHEN/releases/download/2.5B/etaHEN-2.5B.bin",
       "description": "etaHEN Update 2.5B by etaHEN",
       "version": "2.5B",
-      "category": "Homebrew"
+      "category": "Kernel & Exploitation"
     },
     {
       "name": "etaHEN [Pre-release]",
@@ -239,7 +239,7 @@
       "url": "https://github.com/etaHEN/etaHEN/releases/download/2.0b-pre/etaHEN.bin",
       "description": "etaHEN 2.0b PRE-RELEASE [Pre-release] by etaHEN",
       "version": "2.0b-pre",
-      "category": "Homebrew"
+      "category": "Kernel & Exploitation"
     },
     {
       "name": "ps5-payload-manager",
@@ -247,7 +247,7 @@
       "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.2/pldmgr_v0.5.2.elf",
       "description": "v0.5.2 by itsPLK",
       "version": "v0.5.2",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "ps5-pkg-manager",
@@ -255,7 +255,7 @@
       "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.4.1/pkg-manager_v1.4.1.elf",
       "description": "v1.4.1 by itsPLK",
       "version": "v1.4.1",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "ps5-pkg-manager [Pre-release]",
@@ -263,7 +263,7 @@
       "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.2.1/pkgmgr_v1.2.1.elf",
       "description": "v1.2.1 [Pre-release] by itsPLK",
       "version": "v1.2.1",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "ps5-webkit-autoloader",
@@ -271,7 +271,7 @@
       "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.5.2/webkit-autoloader-installer_v0.5.2.elf",
       "description": "v0.5.2 by itsPLK",
       "version": "v0.5.2",
-      "category": "Homebrew"
+      "category": "Networking"
     },
     {
       "name": "ps5-webkit-autoloader [Pre-release]",
@@ -279,7 +279,7 @@
       "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.3.1-pre-3e9b02d/webkit-autoloader-installer_v0.3.1-pre-3e9b02d.elf",
       "description": "v0.3.1-pre-3e9b02d (pre-release) [Pre-release] by itsPLK",
       "version": "v0.3.1-pre-3e9b02d",
-      "category": "Homebrew"
+      "category": "Networking"
     },
     {
       "name": "ps5-web-file-manager",
@@ -287,7 +287,7 @@
       "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/web-file-mgr-v1.9.elf",
       "description": "ELF sending support & draging in to upload for PC web browser by owendswang",
       "version": "v1.9",
-      "category": "Homebrew"
+      "category": "Networking"
     },
     {
       "name": "ps5-web-file-manager",
@@ -295,7 +295,7 @@
       "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/wfm-7zip-helper.elf",
       "description": "ELF sending support & draging in to upload for PC web browser by owendswang",
       "version": "v1.9",
-      "category": "Homebrew"
+      "category": "Networking"
     },
     {
       "name": "ps5upload",
@@ -303,7 +303,7 @@
       "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.41.0/ps5upload-5.41.0.elf",
       "description": "v5.41.0 by phantomptr",
       "version": "v5.41.0",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "ps5-linux-loader",
@@ -319,7 +319,7 @@
       "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.26/elfldr-ps5.elf",
       "description": "v0.26 by ps5-payload-dev",
       "version": "v0.26",
-      "category": "Homebrew"
+      "category": "Kernel & Exploitation"
     },
     {
       "name": "AnyPad-PS5 [Pre-release]",
@@ -327,7 +327,7 @@
       "url": "https://github.com/sinfiltros/AnyPad-PS5/releases/download/v0.5.5-beta/AnyPad-PS5-0.5.5-beta.elf",
       "description": "AnyPad PS5 0.5.5-beta (4 Oct 2026) [Pre-release] by sinfiltros",
       "version": "v0.5.5-beta",
-      "category": "Homebrew"
+      "category": "Controllers & Input"
     },
     {
       "name": "orbit-store-ps5",
@@ -343,7 +343,7 @@
       "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.1/ProsperoMgr.elf",
       "description": "v1.1 by notmaj0r",
       "version": "v1.1",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "ProsperoMgr [Pre-release]",
@@ -351,7 +351,7 @@
       "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/beta/ProsperoMgr.elf",
       "description": "BETA - Prospero Manager [Pre-release] by notmaj0r",
       "version": "beta",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "PS5-Custom-Tool-Manager-",
@@ -359,7 +359,7 @@
       "url": "https://github.com/NikoBellikJR31/PS5-Custom-Tool-Manager-/releases/download/Custom/PS5.Custom.Tool.Manager.V1.elf",
       "description": "PS5 Custom Tool by NikoBellikJR31",
       "version": "Custom",
-      "category": "Homebrew"
+      "category": "System Utilities"
     },
     {
       "name": "ps5-dualsense-overlay",
@@ -367,7 +367,7 @@
       "url": "https://github.com/erickdavestech/ps5-dualsense-overlay/releases/download/v1.0.0/ps5-dualsense-overlay-v1.0.0.elf",
       "description": "ps5-dualsense-overlay v1.0.0 by erickdavestech",
       "version": "v1.0.0",
-      "category": "Homebrew"
+      "category": "Controllers & Input"
     }
   ]
 }
