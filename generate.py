@@ -34,7 +34,7 @@ OUTPUT_FILE = "payloads.json"
 REPO_CATALOG_NAME = "Custom Payloads"
 
 # Allowed payload binary formats
-VALID_EXTENSIONS = (".elf", ".bin", ".lua")
+VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
 
 token = os.getenv("GITHUB_TOKEN")
 headers = {
@@ -113,6 +113,28 @@ def is_ps4_asset(filename: str) -> bool:
     return "ps4" in name_lower and "ps5" not in name_lower
 
 
+def detect_category(repo_slug: str, filename: str, description: str) -> str:
+    """
+    Determines an appropriate category based on keywords in repo name, filename, and description.
+    """
+    search_text = f"{repo_slug} {filename} {description}".lower()
+
+    if any(k in search_text for k in ["ftp", "zftpd", "dns", "web", "websrv", "http", "server", "shsrv", "network"]):
+        return "Networking"
+    if any(k in search_text for k in ["kstuff", "etahen", "hen", "elfldr", "kernel", "klog", "debug", "ps5debug"]):
+        return "Kernel & Exploitation"
+    if any(k in search_text for k in ["dumper", "dump", "compress", "backup", "savemgr", "unrar", "7zip"]):
+        return "Dumping & Backups"
+    if any(k in search_text for k in ["cheat", "trainer", "cheatrunner"]):
+        return "Cheats"
+    if any(k in search_text for k in ["overlay", "dualsense", "controller", "anypad", "ds4"]):
+        return "Controllers & Input"
+    if any(k in search_text for k in ["sync", "time", "clock", "mount", "shadowmount", "upload", "manager", "prospero"]):
+        return "System Utilities"
+
+    return "Homebrew"
+
+
 def main():
     if not os.path.exists(LINKS_FILE):
         print(f"Error: {LINKS_FILE} not found.")
@@ -181,14 +203,16 @@ def main():
                 seen_urls.add(download_url)
                 seen_filenames.add(file_name)
 
-                # Formatted payload entry strictly matching the expected JSON keys
+                # Determine payload category dynamically
+                category = detect_category(repo_slug, orig_filename, desc)
+
                 payload_entry = {
                     "name": display_name,
                     "filename": file_name,
                     "url": download_url,
                     "description": desc,
                     "version": tag_name if tag_name else "v1.0",
-                    "category": "Homebrew"
+                    "category": category
                 }
                 payload_list.append(payload_entry)
 
