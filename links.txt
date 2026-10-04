@@ -28,7 +28,6 @@ github:itsPLK/ps5-payload-manager
 github:itsPLK/ps5-pkg-manager
 github:itsPLK/ps5-webkit-autoloader
 github:notmaj0r/CheatRunner
-github:OpenSourcereR-dev/ps5debug-NG
 github:owendswang/ps5-web-file-manager
 github:owendswang/wfm-7zip-helper
 github:phantomptr/ps5upload
@@ -39,3 +38,8 @@ github:ps5-payload-dev/klogsrv
 github:ps5-payload-dev/shsrv
 github:ps5-payload-dev/websrv
 github:seregonwar/zftpd
+github:sinfiltros/AnyPad-PS5
+github:saawant12/orbit-store-ps5
+github:notmaj0r/ProsperoMgr
+github:NikoBellikJR31/PS5-Custom-Tool-Manager-
+github:erickdavestech/ps5-dualsense-overlay
