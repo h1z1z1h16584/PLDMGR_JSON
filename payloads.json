@@ -106,14 +106,6 @@
       "category": "Homebrew"
     },
     {
-      "name": "Spectrum-Library",
-      "filename": "SpectrumLibrary_1.4.8.elf",
-      "url": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.8/SpectrumLibrary_1.4.8.elf",
-      "description": "SpectrumLibrary_1.4.8 by Phoenixx1202",
-      "version": "1.4.8",
-      "category": "Homebrew"
-    },
-    {
       "name": "ps5-date-time-sync",
       "filename": "ps5-date-time-sync_v1.0.0.elf",
       "url": "https://github.com/kerrdec97/ps5-date-time-sync/releases/download/v1.0.0/ps5-date-time-sync.elf",
@@ -331,10 +323,10 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v0.4.2.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.4.2/orbit_store.elf",
-      "description": "Orbit Store 0.4.2 (Beta) by saawant12",
-      "version": "v0.4.2",
+      "filename": "orbit_store_v0.6.0.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.6.0/orbit_store.elf",
+      "description": "Orbit Store 0.6.0 (Beta) by saawant12",
+      "version": "v0.6.0",
       "category": "Homebrew"
     },
     {
