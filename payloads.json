@@ -182,30 +182,12 @@
     },
     {
       "name": "ftpsrv",
-      "filename": "ftpsrv-ps4.elf",
-      "url": "https://github.com/drakmor/ftpsrv/releases/download/1.16-ng-stable/ftpsrv-ps4.elf",
-      "version": "1.16-ng-stable",
-      "author": "drakmor",
-      "description": "ftpsrv 1.16-ng (stable) by drakmor",
-      "prerelease": false
-    },
-    {
-      "name": "ftpsrv",
       "filename": "ftpsrv-ps5.elf",
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.16-ng-stable/ftpsrv-ps5.elf",
       "version": "1.16-ng-stable",
       "author": "drakmor",
       "description": "ftpsrv 1.16-ng (stable) by drakmor",
       "prerelease": false
-    },
-    {
-      "name": "ftpsrv [Pre-release]",
-      "filename": "ftpsrv-ps4 [Pre-release].elf",
-      "url": "https://github.com/drakmor/ftpsrv/releases/download/1.6-ng-test2/ftpsrv-ps4.elf",
-      "version": "1.6-ng-test2",
-      "author": "drakmor",
-      "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
-      "prerelease": true
     },
     {
       "name": "ftpsrv [Pre-release]",
@@ -224,15 +206,6 @@
       "author": "drakmor",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "prerelease": true
-    },
-    {
-      "name": "nanoDNS",
-      "filename": "nanodns-ps4.elf",
-      "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns-ps4.elf",
-      "version": "0.4",
-      "author": "drakmor",
-      "description": "nanoDNS 0.4 by drakmor",
-      "prerelease": false
     },
     {
       "name": "nanoDNS",
@@ -398,38 +371,11 @@
     },
     {
       "name": "ftpsrv",
-      "filename": "ftpsrv-ps4.elf",
-      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps4.elf",
-      "version": "v0.21.1",
-      "author": "ps5-payload-dev",
-      "description": "v0.21.1 by ps5-payload-dev",
-      "prerelease": false
-    },
-    {
-      "name": "ftpsrv",
       "filename": "ftpsrv-ps5-install.elf",
       "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5-install.elf",
       "version": "v0.21.1",
       "author": "ps5-payload-dev",
       "description": "v0.21.1 by ps5-payload-dev",
-      "prerelease": false
-    },
-    {
-      "name": "ftpsrv",
-      "filename": "ftpsrv-ps5.elf",
-      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
-      "version": "v0.21.1",
-      "author": "ps5-payload-dev",
-      "description": "v0.21.1 by ps5-payload-dev",
-      "prerelease": false
-    },
-    {
-      "name": "klogsrv",
-      "filename": "klogsrv-ps4.elf",
-      "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps4.elf",
-      "version": "v0.9",
-      "author": "ps5-payload-dev",
-      "description": "v0.9 by ps5-payload-dev",
       "prerelease": false
     },
     {
@@ -467,42 +413,6 @@
       "author": "ps5-payload-dev",
       "description": "v0.28 [Pre-release] by ps5-payload-dev",
       "prerelease": true
-    },
-    {
-      "name": "zftpd",
-      "filename": "zftpd-ps4-v1.6.0.bin",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps4-v1.6.0.bin",
-      "version": "v1.6.0",
-      "author": "seregonwar",
-      "description": "zftpd v1.6.0 by seregonwar",
-      "prerelease": false
-    },
-    {
-      "name": "zftpd",
-      "filename": "zftpd-ps4-v1.6.0.elf",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps4-v1.6.0.elf",
-      "version": "v1.6.0",
-      "author": "seregonwar",
-      "description": "zftpd v1.6.0 by seregonwar",
-      "prerelease": false
-    },
-    {
-      "name": "zftpd",
-      "filename": "zftpd-ps4-zhttp-v1.6.0.bin",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps4-zhttp-v1.6.0.bin",
-      "version": "v1.6.0",
-      "author": "seregonwar",
-      "description": "zftpd v1.6.0 by seregonwar",
-      "prerelease": false
-    },
-    {
-      "name": "zftpd",
-      "filename": "zftpd-ps4-zhttp-v1.6.0.elf",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps4-zhttp-v1.6.0.elf",
-      "version": "v1.6.0",
-      "author": "seregonwar",
-      "description": "zftpd v1.6.0 by seregonwar",
-      "prerelease": false
     },
     {
       "name": "zftpd",
