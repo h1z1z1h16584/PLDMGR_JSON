@@ -31,9 +31,10 @@ import requests
 GITHUB_API = "https://api.github.com"
 LINKS_FILE = "links.txt"
 OUTPUT_FILE = "payloads.json"
+REPO_CATALOG_NAME = "Custom Payloads"
 
-# Supported payload executable extensions
-VALID_EXTENSIONS = (".elf", ".bin", ".prx")
+# Allowed payload binary formats
+VALID_EXTENSIONS = (".elf", ".bin", ".lua")
 
 token = os.getenv("GITHUB_TOKEN")
 headers = {
@@ -106,14 +107,10 @@ def fetch_target_releases(repo_slug: str):
 
 def is_ps4_asset(filename: str) -> bool:
     """
-    Checks if an asset is explicitly compiled or targeted for PS4.
-    Excludes files containing 'ps4' unless 'ps5' is also explicitly present.
+    Checks if an asset is explicitly intended for PS4.
     """
     name_lower = filename.lower()
-    # Matches patterns like '_ps4.elf', 'payload_ps4.bin', 'ps4-version.elf'
-    if "ps4" in name_lower and "ps5" not in name_lower:
-        return True
-    return False
+    return "ps4" in name_lower and "ps5" not in name_lower
 
 
 def main():
@@ -143,7 +140,7 @@ def main():
 
         for release in releases:
             is_pre = release.get("prerelease", False)
-            tag_name = release.get("tag_name", "")
+            tag_name = release.get("tag_name", "").strip()
             release_title = release.get("name") or tag_name
             assets = release.get("assets", [])
 
@@ -151,7 +148,7 @@ def main():
                 orig_filename = asset.get("name", "")
                 download_url = asset.get("browser_download_url", "")
 
-                # 1. Filter: Valid payload extension check
+                # 1. Filter: Valid payload extension
                 if not orig_filename.lower().endswith(VALID_EXTENSIONS):
                     continue
 
@@ -162,35 +159,42 @@ def main():
 
                 base, ext = os.path.splitext(orig_filename)
 
+                # Append version tag to the binary filename if missing
+                if tag_name and tag_name.lower() not in base.lower():
+                    base_with_version = f"{base}_{tag_name}"
+                else:
+                    base_with_version = base
+
                 if is_pre:
                     display_name = f"{repo_name} [Pre-release]"
-                    file_name = f"{base} [Pre-release]{ext}"
+                    file_name = f"{base_with_version} [Pre-release]{ext}"
                     desc = f"{release_title} [Pre-release] by {owner}"
                 else:
                     display_name = repo_name
-                    file_name = orig_filename
+                    file_name = f"{base_with_version}{ext}"
                     desc = f"{release_title} by {owner}"
 
-                # 3. Filter: De-duplication check by URL and output filename
-                dedup_key = (download_url, file_name)
+                # 3. Deduplication
                 if download_url in seen_urls or file_name in seen_filenames:
                     continue
 
                 seen_urls.add(download_url)
                 seen_filenames.add(file_name)
 
+                # Formatted payload entry strictly matching the expected JSON keys
                 payload_entry = {
                     "name": display_name,
                     "filename": file_name,
                     "url": download_url,
-                    "version": tag_name,
-                    "author": owner,
                     "description": desc,
-                    "prerelease": is_pre
+                    "version": tag_name if tag_name else "v1.0",
+                    "category": "Homebrew"
                 }
                 payload_list.append(payload_entry)
 
+    # Required top-level structure: "name" must appear before "payloads"
     output_data = {
+        "name": REPO_CATALOG_NAME,
         "payloads": payload_list
     }
 
