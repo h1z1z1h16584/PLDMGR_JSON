@@ -1,508 +1,461 @@
 {
+  "name": "Custom Payloads",
   "payloads": [
     {
       "name": "PS5-Game-Compressor",
-      "filename": "game-compressor.elf",
+      "filename": "game-compressor_v1.0.4.elf",
       "url": "https://github.com/juma-sayeh/PS5-Game-Compressor/releases/download/v1.0.4/game-compressor.elf",
-      "version": "v1.0.4",
-      "author": "juma-sayeh",
       "description": "Game Compressor 1.0.4 by juma-sayeh",
-      "prerelease": false
+      "version": "v1.0.4",
+      "category": "Homebrew"
     },
     {
       "name": "apr-emu-updater",
       "filename": "apr_emu_updater_v2.0.6.elf",
       "url": "https://github.com/tsuramatsu1/apr-emu-updater/releases/download/v2.0.6/apr_emu_updater_v2.0.6.elf",
-      "version": "v2.0.6",
-      "author": "tsuramatsu1",
       "description": "v2.0.6 by tsuramatsu1",
-      "prerelease": false
+      "version": "v2.0.6",
+      "category": "Homebrew"
     },
     {
       "name": "garlic-savemgr",
-      "filename": "garlic-savemgr.elf",
+      "filename": "garlic-savemgr_v1.7.elf",
       "url": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.7/garlic-savemgr.elf",
-      "version": "v1.7",
-      "author": "earthonion",
       "description": "v1.7 by earthonion",
-      "prerelease": false
+      "version": "v1.7",
+      "category": "Homebrew"
     },
     {
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr [Pre-release].elf",
+      "filename": "garlic-savemgr_v1.62b [Pre-release].elf",
       "url": "https://github.com/earthonion/garlic-savemgr/releases/download/v1.62b/garlic-savemgr.elf",
-      "version": "v1.62b",
-      "author": "earthonion",
       "description": "v1.62b [Pre-release] by earthonion",
-      "prerelease": true
+      "version": "v1.62b",
+      "category": "Homebrew"
     },
     {
       "name": "unrar-ps5",
-      "filename": "unrar_ps5.elf",
+      "filename": "unrar_ps5_v1.4.0.elf",
       "url": "https://github.com/bizkut/unrar-ps5/releases/download/v1.4.0/unrar_ps5.elf",
-      "version": "v1.4.0",
-      "author": "bizkut",
       "description": "v1.4.0 by bizkut",
-      "prerelease": false
+      "version": "v1.4.0",
+      "category": "Homebrew"
     },
     {
       "name": "onionHEN",
-      "filename": "OnionHEN.elf",
+      "filename": "OnionHEN_v0.0.13.elf",
       "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
-      "version": "v0.0.13",
-      "author": "aydencharles",
       "description": "OnionHEN v0.0.13 by aydencharles",
-      "prerelease": false
+      "version": "v0.0.13",
+      "category": "Homebrew"
     },
     {
       "name": "onionHEN [Pre-release]",
-      "filename": "OnionHEN [Pre-release].elf",
+      "filename": "OnionHEN_v0.9.0-beta1 [Pre-release].elf",
       "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0-beta1/OnionHEN.elf",
-      "version": "v0.9.0-beta1",
-      "author": "aydencharles",
       "description": "OnionHEN v0.9.0-beta1 [Pre-release] by aydencharles",
-      "prerelease": true
+      "version": "v0.9.0-beta1",
+      "category": "Homebrew"
     },
     {
       "name": "pegasus-dl",
-      "filename": "pegasus_dl.elf",
+      "filename": "pegasus_dl_v1.10.1.elf",
       "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.1/pegasus_dl.elf",
-      "version": "v1.10.1",
-      "author": "pegasus-ps5",
       "description": "Pegasus DL 1.10.1 by pegasus-ps5",
-      "prerelease": false
+      "version": "v1.10.1",
+      "category": "Homebrew"
     },
     {
       "name": "PoorDS4",
-      "filename": "PoorDS4-status.elf",
+      "filename": "PoorDS4-status_v0.1.0-rc51.elf",
       "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4-status.elf",
-      "version": "v0.1.0-rc51",
-      "author": "ItsBlurf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
-      "prerelease": false
+      "version": "v0.1.0-rc51",
+      "category": "Homebrew"
     },
     {
       "name": "PoorDS4",
-      "filename": "PoorDS4-stop.elf",
+      "filename": "PoorDS4-stop_v0.1.0-rc51.elf",
       "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4-stop.elf",
-      "version": "v0.1.0-rc51",
-      "author": "ItsBlurf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
-      "prerelease": false
+      "version": "v0.1.0-rc51",
+      "category": "Homebrew"
     },
     {
       "name": "PoorDS4",
-      "filename": "PoorDS4rc51.elf",
+      "filename": "PoorDS4rc51_v0.1.0-rc51.elf",
       "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4rc51.elf",
-      "version": "v0.1.0-rc51",
-      "author": "ItsBlurf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
-      "prerelease": false
+      "version": "v0.1.0-rc51",
+      "category": "Homebrew"
     },
     {
       "name": "PIZZA-HEN",
       "filename": "PIZZA-HEN-v2.00.elf",
       "url": "https://github.com/Michele-M-Media/PIZZA-HEN/releases/download/v2.00/PIZZA-HEN-v2.00.elf",
-      "version": "v2.00",
-      "author": "Michele-M-Media",
       "description": "PIZZA HEN v2.00 - Complete I18N Final Gate by Michele-M-Media",
-      "prerelease": false
+      "version": "v2.00",
+      "category": "Homebrew"
     },
     {
       "name": "PS-Play",
       "filename": "PSPlay-2.1.elf",
       "url": "https://github.com/MounirHero/PS-Play/releases/download/2.1/PSPlay-2.1.elf",
-      "version": "2.1",
-      "author": "MounirHero",
       "description": "2.1 by MounirHero",
-      "prerelease": false
+      "version": "2.1",
+      "category": "Homebrew"
     },
     {
       "name": "Spectrum-Library",
       "filename": "SpectrumLibrary_1.4.8.elf",
       "url": "https://github.com/Phoenixx1202/Spectrum-Library/releases/download/1.4.8/SpectrumLibrary_1.4.8.elf",
-      "version": "1.4.8",
-      "author": "Phoenixx1202",
       "description": "SpectrumLibrary_1.4.8 by Phoenixx1202",
-      "prerelease": false
+      "version": "1.4.8",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-date-time-sync",
-      "filename": "ps5-date-time-sync.elf",
+      "filename": "ps5-date-time-sync_v1.0.0.elf",
       "url": "https://github.com/kerrdec97/ps5-date-time-sync/releases/download/v1.0.0/ps5-date-time-sync.elf",
-      "version": "v1.0.0",
-      "author": "kerrdec97",
       "description": "PS5 Time & Date Sync v1.0.0 by kerrdec97",
-      "prerelease": false
+      "version": "v1.0.0",
+      "category": "Homebrew"
     },
     {
       "name": "ps5debug-NG",
       "filename": "ps5debug-NG_v1.3.2.elf",
       "url": "https://github.com/Pharaoh2k/ps5debug-NG/releases/download/1.3.2/ps5debug-NG_v1.3.2.elf",
-      "version": "1.3.2",
-      "author": "Pharaoh2k",
       "description": "ps5debug-NG v1.3.2 by Pharaoh2k",
-      "prerelease": false
+      "version": "1.3.2",
+      "category": "Homebrew"
     },
     {
       "name": "CheatRunner",
-      "filename": "CheatRunner.elf",
+      "filename": "CheatRunner_v0.17.2.elf",
       "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
-      "version": "v0.17.2",
-      "author": "notmaj0r",
       "description": "v0.17.2 by notmaj0r",
-      "prerelease": false
+      "version": "v0.17.2",
+      "category": "Homebrew"
     },
     {
       "name": "CheatRunner [Pre-release]",
-      "filename": "CheatRunner [Pre-release].elf",
+      "filename": "CheatRunner_v0.16 [Pre-release].elf",
       "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.16/CheatRunner.elf",
-      "version": "v0.16",
-      "author": "notmaj0r",
       "description": "v0.16 [Pre-release] by notmaj0r",
-      "prerelease": true
+      "version": "v0.16",
+      "category": "Homebrew"
     },
     {
       "name": "PS5SX2",
-      "filename": "PS5SX2Installer.elf",
+      "filename": "PS5SX2Installer_vk-285-128.elf",
       "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-128/PS5SX2Installer.elf",
-      "version": "vk-285-128",
-      "author": "Swordpdf",
       "description": "PS5SX2 1.85 by Swordpdf",
-      "prerelease": false
+      "version": "vk-285-128",
+      "category": "Homebrew"
     },
     {
       "name": "PS5SX2",
-      "filename": "PS5SXHelper.elf",
+      "filename": "PS5SXHelper_vk-285-128.elf",
       "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-128/PS5SXHelper.elf",
-      "version": "vk-285-128",
-      "author": "Swordpdf",
       "description": "PS5SX2 1.85 by Swordpdf",
-      "prerelease": false
+      "version": "vk-285-128",
+      "category": "Homebrew"
     },
     {
       "name": "ftpsrv",
-      "filename": "ftpsrv-ps5.elf",
+      "filename": "ftpsrv-ps5_1.16-ng-stable.elf",
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.16-ng-stable/ftpsrv-ps5.elf",
-      "version": "1.16-ng-stable",
-      "author": "drakmor",
       "description": "ftpsrv 1.16-ng (stable) by drakmor",
-      "prerelease": false
+      "version": "1.16-ng-stable",
+      "category": "Homebrew"
     },
     {
       "name": "ftpsrv [Pre-release]",
-      "filename": "ftpsrv-ps5-autopause [Pre-release].elf",
+      "filename": "ftpsrv-ps5-autopause_1.6-ng-test2 [Pre-release].elf",
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.6-ng-test2/ftpsrv-ps5-autopause.elf",
-      "version": "1.6-ng-test2",
-      "author": "drakmor",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
-      "prerelease": true
+      "version": "1.6-ng-test2",
+      "category": "Homebrew"
     },
     {
       "name": "ftpsrv [Pre-release]",
-      "filename": "ftpsrv-ps5 [Pre-release].elf",
+      "filename": "ftpsrv-ps5_1.6-ng-test2 [Pre-release].elf",
       "url": "https://github.com/drakmor/ftpsrv/releases/download/1.6-ng-test2/ftpsrv-ps5.elf",
-      "version": "1.6-ng-test2",
-      "author": "drakmor",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
-      "prerelease": true
+      "version": "1.6-ng-test2",
+      "category": "Homebrew"
     },
     {
       "name": "nanoDNS",
-      "filename": "nanodns.elf",
+      "filename": "nanodns_0.4.elf",
       "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns.elf",
-      "version": "0.4",
-      "author": "drakmor",
       "description": "nanoDNS 0.4 by drakmor",
-      "prerelease": false
+      "version": "0.4",
+      "category": "Homebrew"
     },
     {
       "name": "ShadowMountPlus",
-      "filename": "shadowmountplus.elf",
+      "filename": "shadowmountplus_1.7beta3.elf",
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta3/shadowmountplus.elf",
-      "version": "1.7beta3",
-      "author": "drakmor",
       "description": "ShadowMountPlus 1.7beta3 by drakmor",
-      "prerelease": false
+      "version": "1.7beta3",
+      "category": "Homebrew"
     },
     {
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus [Pre-release].elf",
+      "filename": "shadowmountplus_1.7beta4 [Pre-release].elf",
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta4/shadowmountplus.elf",
-      "version": "1.7beta4",
-      "author": "drakmor",
       "description": "ShadowMountPlus 1.7beta4 [Pre-release] by drakmor",
-      "prerelease": true
+      "version": "1.7beta4",
+      "category": "Homebrew"
     },
     {
       "name": "kstuff-lite",
-      "filename": "kstuff.elf",
+      "filename": "kstuff_v1.11.elf",
       "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.11/kstuff.elf",
-      "version": "v1.11",
-      "author": "EchoStretch",
       "description": "Kstuff Lite 1.11 Beta by EchoStretch",
-      "prerelease": false
+      "version": "v1.11",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-app-dumper",
       "filename": "ps5-app-dumper_v2.10.elf",
       "url": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.10/ps5-app-dumper_v2.10.elf",
-      "version": "v2.10",
-      "author": "EchoStretch",
       "description": "PS5 App Dumper 2.00 Beta PS5 App Dumper 2.10 Beta by EchoStretch",
-      "prerelease": false
+      "version": "v2.10",
+      "category": "Homebrew"
     },
     {
       "name": "etaHEN",
       "filename": "etaHEN-2.5B.bin",
       "url": "https://github.com/etaHEN/etaHEN/releases/download/2.5B/etaHEN-2.5B.bin",
-      "version": "2.5B",
-      "author": "etaHEN",
       "description": "etaHEN Update 2.5B by etaHEN",
-      "prerelease": false
+      "version": "2.5B",
+      "category": "Homebrew"
     },
     {
       "name": "etaHEN [Pre-release]",
-      "filename": "etaHEN [Pre-release].bin",
+      "filename": "etaHEN_2.0b-pre [Pre-release].bin",
       "url": "https://github.com/etaHEN/etaHEN/releases/download/2.0b-pre/etaHEN.bin",
-      "version": "2.0b-pre",
-      "author": "etaHEN",
       "description": "etaHEN 2.0b PRE-RELEASE [Pre-release] by etaHEN",
-      "prerelease": true
+      "version": "2.0b-pre",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-payload-manager",
       "filename": "pldmgr_v0.5.2.elf",
       "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.2/pldmgr_v0.5.2.elf",
-      "version": "v0.5.2",
-      "author": "itsPLK",
       "description": "v0.5.2 by itsPLK",
-      "prerelease": false
+      "version": "v0.5.2",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-pkg-manager",
       "filename": "pkg-manager_v1.4.1.elf",
       "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.4.1/pkg-manager_v1.4.1.elf",
-      "version": "v1.4.1",
-      "author": "itsPLK",
       "description": "v1.4.1 by itsPLK",
-      "prerelease": false
+      "version": "v1.4.1",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-pkg-manager [Pre-release]",
       "filename": "pkgmgr_v1.2.1 [Pre-release].elf",
       "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.2.1/pkgmgr_v1.2.1.elf",
-      "version": "v1.2.1",
-      "author": "itsPLK",
       "description": "v1.2.1 [Pre-release] by itsPLK",
-      "prerelease": true
+      "version": "v1.2.1",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-webkit-autoloader",
       "filename": "webkit-autoloader-installer_v0.5.2.elf",
       "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.5.2/webkit-autoloader-installer_v0.5.2.elf",
-      "version": "v0.5.2",
-      "author": "itsPLK",
       "description": "v0.5.2 by itsPLK",
-      "prerelease": false
+      "version": "v0.5.2",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-webkit-autoloader [Pre-release]",
       "filename": "webkit-autoloader-installer_v0.3.1-pre-3e9b02d [Pre-release].elf",
       "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.3.1-pre-3e9b02d/webkit-autoloader-installer_v0.3.1-pre-3e9b02d.elf",
-      "version": "v0.3.1-pre-3e9b02d",
-      "author": "itsPLK",
       "description": "v0.3.1-pre-3e9b02d (pre-release) [Pre-release] by itsPLK",
-      "prerelease": true
+      "version": "v0.3.1-pre-3e9b02d",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-web-file-manager",
       "filename": "web-file-mgr-v1.9.elf",
       "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/web-file-mgr-v1.9.elf",
-      "version": "v1.9",
-      "author": "owendswang",
       "description": "ELF sending support & draging in to upload for PC web browser by owendswang",
-      "prerelease": false
+      "version": "v1.9",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-web-file-manager",
-      "filename": "wfm-7zip-helper.elf",
+      "filename": "wfm-7zip-helper_v1.9.elf",
       "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/wfm-7zip-helper.elf",
-      "version": "v1.9",
-      "author": "owendswang",
       "description": "ELF sending support & draging in to upload for PC web browser by owendswang",
-      "prerelease": false
+      "version": "v1.9",
+      "category": "Homebrew"
     },
     {
       "name": "wfm-7zip-helper",
       "filename": "wfm-7zip-helper-v26.03-1.elf",
       "url": "https://github.com/owendswang/wfm-7zip-helper/releases/download/v26.03-1/wfm-7zip-helper-v26.03-1.elf",
-      "version": "v26.03-1",
-      "author": "owendswang",
       "description": "Stripped ELF size by owendswang",
-      "prerelease": false
+      "version": "v26.03-1",
+      "category": "Homebrew"
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-5.41.0.elf",
+      "filename": "ps5upload-5.41.0_v5.41.0.elf",
       "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.41.0/ps5upload-5.41.0.elf",
-      "version": "v5.41.0",
-      "author": "phantomptr",
       "description": "v5.41.0 by phantomptr",
-      "prerelease": false
+      "version": "v5.41.0",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-linux-loader",
-      "filename": "ps5-linux-loader.elf",
+      "filename": "ps5-linux-loader_v2.5.elf",
       "url": "https://github.com/ps5-linux/ps5-linux-loader/releases/download/v2.5/ps5-linux-loader.elf",
-      "version": "v2.5",
-      "author": "ps5-linux",
       "description": "v2.5 by ps5-linux",
-      "prerelease": false
+      "version": "v2.5",
+      "category": "Homebrew"
     },
     {
       "name": "elfldr",
-      "filename": "elfldr-ps5.elf",
+      "filename": "elfldr-ps5_v0.26.elf",
       "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.26/elfldr-ps5.elf",
-      "version": "v0.26",
-      "author": "ps5-payload-dev",
       "description": "v0.26 by ps5-payload-dev",
-      "prerelease": false
+      "version": "v0.26",
+      "category": "Homebrew"
     },
     {
       "name": "ftpsrv",
-      "filename": "ftpsrv-ps5-install.elf",
+      "filename": "ftpsrv-ps5-install_v0.21.1.elf",
       "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5-install.elf",
-      "version": "v0.21.1",
-      "author": "ps5-payload-dev",
       "description": "v0.21.1 by ps5-payload-dev",
-      "prerelease": false
+      "version": "v0.21.1",
+      "category": "Homebrew"
+    },
+    {
+      "name": "ftpsrv",
+      "filename": "ftpsrv-ps5_v0.21.1.elf",
+      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
+      "description": "v0.21.1 by ps5-payload-dev",
+      "version": "v0.21.1",
+      "category": "Homebrew"
     },
     {
       "name": "klogsrv",
-      "filename": "klogsrv-ps5.elf",
+      "filename": "klogsrv-ps5_v0.9.elf",
       "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
-      "version": "v0.9",
-      "author": "ps5-payload-dev",
       "description": "v0.9 by ps5-payload-dev",
-      "prerelease": false
+      "version": "v0.9",
+      "category": "Homebrew"
     },
     {
       "name": "shsrv",
-      "filename": "shsrv-ps5.elf",
+      "filename": "shsrv-ps5_v0.20.elf",
       "url": "https://github.com/ps5-payload-dev/shsrv/releases/download/v0.20/shsrv-ps5.elf",
-      "version": "v0.20",
-      "author": "ps5-payload-dev",
       "description": "v0.20 by ps5-payload-dev",
-      "prerelease": false
+      "version": "v0.20",
+      "category": "Homebrew"
     },
     {
       "name": "websrv",
-      "filename": "websrv-ps5.elf",
+      "filename": "websrv-ps5_v0.34.elf",
       "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/websrv-ps5.elf",
-      "version": "v0.34",
-      "author": "ps5-payload-dev",
       "description": "v0.34 by ps5-payload-dev",
-      "prerelease": false
+      "version": "v0.34",
+      "category": "Homebrew"
     },
     {
       "name": "websrv [Pre-release]",
-      "filename": "websrv-ps5 [Pre-release].elf",
+      "filename": "websrv-ps5_v0.28 [Pre-release].elf",
       "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.28/websrv-ps5.elf",
-      "version": "v0.28",
-      "author": "ps5-payload-dev",
       "description": "v0.28 [Pre-release] by ps5-payload-dev",
-      "prerelease": true
+      "version": "v0.28",
+      "category": "Homebrew"
     },
     {
       "name": "zftpd",
       "filename": "zftpd-ps5-v1.6.0.bin",
       "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-v1.6.0.bin",
-      "version": "v1.6.0",
-      "author": "seregonwar",
       "description": "zftpd v1.6.0 by seregonwar",
-      "prerelease": false
+      "version": "v1.6.0",
+      "category": "Homebrew"
     },
     {
       "name": "zftpd",
       "filename": "zftpd-ps5-v1.6.0.elf",
       "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-v1.6.0.elf",
-      "version": "v1.6.0",
-      "author": "seregonwar",
       "description": "zftpd v1.6.0 by seregonwar",
-      "prerelease": false
+      "version": "v1.6.0",
+      "category": "Homebrew"
     },
     {
       "name": "zftpd",
       "filename": "zftpd-ps5-zhttp-v1.6.0.bin",
       "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-zhttp-v1.6.0.bin",
-      "version": "v1.6.0",
-      "author": "seregonwar",
       "description": "zftpd v1.6.0 by seregonwar",
-      "prerelease": false
+      "version": "v1.6.0",
+      "category": "Homebrew"
     },
     {
       "name": "zftpd",
       "filename": "zftpd-ps5-zhttp-v1.6.0.elf",
       "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-zhttp-v1.6.0.elf",
-      "version": "v1.6.0",
-      "author": "seregonwar",
       "description": "zftpd v1.6.0 by seregonwar",
-      "prerelease": false
+      "version": "v1.6.0",
+      "category": "Homebrew"
     },
     {
       "name": "AnyPad-PS5 [Pre-release]",
-      "filename": "AnyPad-PS5-0.5.5-beta [Pre-release].elf",
+      "filename": "AnyPad-PS5-0.5.5-beta_v0.5.5-beta [Pre-release].elf",
       "url": "https://github.com/sinfiltros/AnyPad-PS5/releases/download/v0.5.5-beta/AnyPad-PS5-0.5.5-beta.elf",
-      "version": "v0.5.5-beta",
-      "author": "sinfiltros",
       "description": "AnyPad PS5 0.5.5-beta (4 Oct 2026) [Pre-release] by sinfiltros",
-      "prerelease": true
+      "version": "v0.5.5-beta",
+      "category": "Homebrew"
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store.elf",
+      "filename": "orbit_store_v0.4.2.elf",
       "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.4.2/orbit_store.elf",
-      "version": "v0.4.2",
-      "author": "saawant12",
       "description": "Orbit Store 0.4.2 (Beta) by saawant12",
-      "prerelease": false
+      "version": "v0.4.2",
+      "category": "Homebrew"
     },
     {
       "name": "ProsperoMgr",
-      "filename": "ProsperoMgr.elf",
+      "filename": "ProsperoMgr_v1.1.elf",
       "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.1/ProsperoMgr.elf",
-      "version": "v1.1",
-      "author": "notmaj0r",
       "description": "v1.1 by notmaj0r",
-      "prerelease": false
+      "version": "v1.1",
+      "category": "Homebrew"
     },
     {
       "name": "ProsperoMgr [Pre-release]",
-      "filename": "ProsperoMgr [Pre-release].elf",
+      "filename": "ProsperoMgr_beta [Pre-release].elf",
       "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/beta/ProsperoMgr.elf",
-      "version": "beta",
-      "author": "notmaj0r",
       "description": "BETA - Prospero Manager [Pre-release] by notmaj0r",
-      "prerelease": true
+      "version": "beta",
+      "category": "Homebrew"
     },
     {
       "name": "PS5-Custom-Tool-Manager-",
       "filename": "PS5.Custom.Tool.Manager.V1.elf",
       "url": "https://github.com/NikoBellikJR31/PS5-Custom-Tool-Manager-/releases/download/Custom/PS5.Custom.Tool.Manager.V1.elf",
-      "version": "Custom",
-      "author": "NikoBellikJR31",
       "description": "PS5 Custom Tool by NikoBellikJR31",
-      "prerelease": false
+      "version": "Custom",
+      "category": "Homebrew"
     },
     {
       "name": "ps5-dualsense-overlay",
       "filename": "ps5-dualsense-overlay-v1.0.0.elf",
       "url": "https://github.com/erickdavestech/ps5-dualsense-overlay/releases/download/v1.0.0/ps5-dualsense-overlay-v1.0.0.elf",
-      "version": "v1.0.0",
-      "author": "erickdavestech",
       "description": "ps5-dualsense-overlay v1.0.0 by erickdavestech",
-      "prerelease": false
+      "version": "v1.0.0",
+      "category": "Homebrew"
     }
   ]
 }
