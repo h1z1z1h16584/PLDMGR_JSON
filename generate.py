@@ -32,7 +32,7 @@ GITHUB_API = "https://api.github.com"
 LINKS_FILE = "links.txt"
 OUTPUT_FILE = "payloads.json"
 
-# Setup authentication headers to avoid GitHub API rate-limiting (60 req/hr vs 5000 req/hr)
+# Setup authentication headers to prevent GitHub API rate-limiting
 token = os.getenv("GITHUB_TOKEN")
 headers = {
     "Accept": "application/vnd.github+json"
@@ -43,19 +43,34 @@ if token:
 
 def parse_repo_identifier(line: str):
     """
-    Extracts 'owner/repo' from either a full GitHub URL or a direct 'owner/repo' string.
+    Extracts 'owner/repo' from:
+      - github:owner/repo
+      - git@github.com:owner/repo
+      - https://github.com/owner/repo
+      - owner/repo
     """
     line = line.strip()
     if not line or line.startswith("#"):
         return None
 
-    # Match https://github.com/owner/repo or owner/repo
-    pattern = r"(?:https?://github\.com/)?([^/\s]+)/([^/\s#]+)"
-    match = re.search(pattern, line)
-    if match:
-        owner = match.group(1)
-        repo = match.group(2).removesuffix(".git")
+    # Strip prefixes like 'github:', 'git@github.com:', or 'https://github.com/'
+    cleaned = re.sub(
+        r"^(?:https?://github\.com/|git@github\.com:|github:)",
+        "",
+        line,
+        flags=re.IGNORECASE,
+    )
+
+    # Strip optional .git suffix and trailing slashes
+    cleaned = cleaned.rstrip("/").removesuffix(".git")
+
+    # Match remaining owner/repo
+    parts = cleaned.split("/")
+    if len(parts) >= 2:
+        owner = parts[0].strip()
+        repo = parts[1].strip()
         return f"{owner}/{repo}"
+
     return None
 
 
@@ -132,7 +147,7 @@ def main():
                 download_url = asset.get("browser_download_url", "")
                 size = asset.get("size", 0)
 
-                # Format file name if it's a pre-release
+                # Format file name and display title if it is a pre-release
                 if is_pre:
                     base, ext = os.path.splitext(orig_filename)
                     formatted_filename = f"{base} [Pre-release]{ext}"
@@ -150,11 +165,10 @@ def main():
                     "url": download_url,
                     "size": size,
                     "created_at": asset.get("created_at"),
-                    "updated_at": asset.get("updated_at")
+                    "updated_at": asset.get("updated_at"),
                 }
                 all_payloads.append(payload_entry)
 
-    # Save to payloads.json
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(all_payloads, f, indent=2, ensure_ascii=False)
 
