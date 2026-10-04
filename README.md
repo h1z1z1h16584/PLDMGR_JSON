@@ -15,13 +15,13 @@ Open the Payload Manager dashboard on your PS5:
 ### GitHub Raw
 
 ```text
-https://raw.githubusercontent.com/RDX-Sci01/PLDMGR_JSON/main/payloads.json
+https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_JSON/main/payloads.json
 ```
 
 ### GitHub Pages
 
 ```text
-https://rdx-sci01.github.io/PLDMGR_JSON/payloads.json
+https://h1z1z1h16584.github.io/PLDMGR_JSON/payloads.json
 ```
 
 These are alternative URLs pointing to the same generated catalog. You normally only need to add one.
