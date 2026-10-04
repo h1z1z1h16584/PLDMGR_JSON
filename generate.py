@@ -32,8 +32,8 @@ GITHUB_API = "https://api.github.com"
 LINKS_FILE = "links.txt"
 OUTPUT_FILE = "payloads.json"
 
-# Supported payload file extensions
-VALID_EXTENSIONS = (".elf", ".bin", ".lua")
+# Supported payload executable extensions
+VALID_EXTENSIONS = (".elf", ".bin", ".prx")
 
 token = os.getenv("GITHUB_TOKEN")
 headers = {
@@ -44,6 +44,13 @@ if token:
 
 
 def parse_repo_identifier(line: str):
+    """
+    Extracts 'owner/repo' from:
+      - github:owner/repo
+      - git@github.com:owner/repo
+      - https://github.com/owner/repo
+      - owner/repo
+    """
     line = line.strip()
     if not line or line.startswith("#"):
         return None
@@ -63,6 +70,9 @@ def parse_repo_identifier(line: str):
 
 
 def fetch_target_releases(repo_slug: str):
+    """
+    Fetches the latest official (stable) release and the latest pre-release.
+    """
     url = f"{GITHUB_API}/repos/{repo_slug}/releases"
     try:
         response = requests.get(url, headers=headers, timeout=15)
@@ -94,6 +104,18 @@ def fetch_target_releases(repo_slug: str):
         return []
 
 
+def is_ps4_asset(filename: str) -> bool:
+    """
+    Checks if an asset is explicitly compiled or targeted for PS4.
+    Excludes files containing 'ps4' unless 'ps5' is also explicitly present.
+    """
+    name_lower = filename.lower()
+    # Matches patterns like '_ps4.elf', 'payload_ps4.bin', 'ps4-version.elf'
+    if "ps4" in name_lower and "ps5" not in name_lower:
+        return True
+    return False
+
+
 def main():
     if not os.path.exists(LINKS_FILE):
         print(f"Error: {LINKS_FILE} not found.")
@@ -111,6 +133,8 @@ def main():
     print(f"Found {len(repos)} repositories to process.")
 
     payload_list = []
+    seen_urls = set()
+    seen_filenames = set()
 
     for repo_slug in repos:
         print(f"Fetching releases for: {repo_slug}")
@@ -127,8 +151,13 @@ def main():
                 orig_filename = asset.get("name", "")
                 download_url = asset.get("browser_download_url", "")
 
-                # Filter: only accept valid payload extensions (.elf, .bin, .prx)
+                # 1. Filter: Valid payload extension check
                 if not orig_filename.lower().endswith(VALID_EXTENSIONS):
+                    continue
+
+                # 2. Filter: Discard PS4-specific binaries
+                if is_ps4_asset(orig_filename):
+                    print(f"[-] Skipping PS4 asset: {orig_filename}")
                     continue
 
                 base, ext = os.path.splitext(orig_filename)
@@ -142,7 +171,14 @@ def main():
                     file_name = orig_filename
                     desc = f"{release_title} by {owner}"
 
-                # Structured format required by PS5 payload managers
+                # 3. Filter: De-duplication check by URL and output filename
+                dedup_key = (download_url, file_name)
+                if download_url in seen_urls or file_name in seen_filenames:
+                    continue
+
+                seen_urls.add(download_url)
+                seen_filenames.add(file_name)
+
                 payload_entry = {
                     "name": display_name,
                     "filename": file_name,
@@ -154,7 +190,6 @@ def main():
                 }
                 payload_list.append(payload_entry)
 
-    # Standard JSON structure expected by payload loaders
     output_data = {
         "payloads": payload_list
     }
