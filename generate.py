@@ -32,7 +32,9 @@ GITHUB_API = "https://api.github.com"
 LINKS_FILE = "links.txt"
 OUTPUT_FILE = "payloads.json"
 
-# Setup authentication headers to prevent GitHub API rate-limiting
+# Supported payload file extensions
+VALID_EXTENSIONS = (".elf", ".bin", ".prx")
+
 token = os.getenv("GITHUB_TOKEN")
 headers = {
     "Accept": "application/vnd.github+json"
@@ -42,49 +44,28 @@ if token:
 
 
 def parse_repo_identifier(line: str):
-    """
-    Extracts 'owner/repo' from:
-      - github:owner/repo
-      - git@github.com:owner/repo
-      - https://github.com/owner/repo
-      - owner/repo
-    """
     line = line.strip()
     if not line or line.startswith("#"):
         return None
 
-    # Strip prefixes like 'github:', 'git@github.com:', or 'https://github.com/'
     cleaned = re.sub(
         r"^(?:https?://github\.com/|git@github\.com:|github:)",
         "",
         line,
         flags=re.IGNORECASE,
     )
-
-    # Strip optional .git suffix and trailing slashes
     cleaned = cleaned.rstrip("/").removesuffix(".git")
 
-    # Match remaining owner/repo
     parts = cleaned.split("/")
     if len(parts) >= 2:
-        owner = parts[0].strip()
-        repo = parts[1].strip()
-        return f"{owner}/{repo}"
-
+        return f"{parts[0].strip()}/{parts[1].strip()}"
     return None
 
 
 def fetch_target_releases(repo_slug: str):
-    """
-    Retrieves the latest official (stable) release and the latest pre-release
-    for a given repository.
-    """
     url = f"{GITHUB_API}/repos/{repo_slug}/releases"
     try:
         response = requests.get(url, headers=headers, timeout=15)
-        if response.status_code == 404:
-            print(f"[!] Repository or releases not found: {repo_slug}")
-            return []
         if response.status_code != 200:
             print(f"[!] Error fetching {repo_slug}: HTTP {response.status_code}")
             return []
@@ -93,7 +74,6 @@ def fetch_target_releases(repo_slug: str):
         if not isinstance(releases, list):
             return []
 
-        # Find latest pre-release and latest official release (excluding drafts)
         latest_prerelease = next(
             (r for r in releases if r.get("prerelease") and not r.get("draft")), None
         )
@@ -130,49 +110,59 @@ def main():
 
     print(f"Found {len(repos)} repositories to process.")
 
-    all_payloads = []
+    payload_list = []
 
     for repo_slug in repos:
         print(f"Fetching releases for: {repo_slug}")
+        owner, repo_name = repo_slug.split("/")
         releases = fetch_target_releases(repo_slug)
 
         for release in releases:
             is_pre = release.get("prerelease", False)
             tag_name = release.get("tag_name", "")
-            release_name = release.get("name") or tag_name
+            release_title = release.get("name") or tag_name
             assets = release.get("assets", [])
 
             for asset in assets:
                 orig_filename = asset.get("name", "")
                 download_url = asset.get("browser_download_url", "")
-                size = asset.get("size", 0)
 
-                # Format file name and display title if it is a pre-release
+                # Filter: only accept valid payload extensions (.elf, .bin, .prx)
+                if not orig_filename.lower().endswith(VALID_EXTENSIONS):
+                    continue
+
+                base, ext = os.path.splitext(orig_filename)
+
                 if is_pre:
-                    base, ext = os.path.splitext(orig_filename)
-                    formatted_filename = f"{base} [Pre-release]{ext}"
-                    display_title = f"{release_name} [Pre-release] - {orig_filename}"
+                    display_name = f"{repo_name} [Pre-release]"
+                    file_name = f"{base} [Pre-release]{ext}"
+                    desc = f"{release_title} [Pre-release] by {owner}"
                 else:
-                    formatted_filename = orig_filename
-                    display_title = f"{release_name} - {orig_filename}"
+                    display_name = repo_name
+                    file_name = orig_filename
+                    desc = f"{release_title} by {owner}"
 
+                # Structured format required by PS5 payload managers
                 payload_entry = {
-                    "name": formatted_filename,
-                    "title": display_title,
-                    "repo": repo_slug,
-                    "version": tag_name,
-                    "prerelease": is_pre,
+                    "name": display_name,
+                    "filename": file_name,
                     "url": download_url,
-                    "size": size,
-                    "created_at": asset.get("created_at"),
-                    "updated_at": asset.get("updated_at"),
+                    "version": tag_name,
+                    "author": owner,
+                    "description": desc,
+                    "prerelease": is_pre
                 }
-                all_payloads.append(payload_entry)
+                payload_list.append(payload_entry)
+
+    # Standard JSON structure expected by payload loaders
+    output_data = {
+        "payloads": payload_list
+    }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(all_payloads, f, indent=2, ensure_ascii=False)
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
 
-    print(f"Successfully generated {OUTPUT_FILE} with {len(all_payloads)} total payloads.")
+    print(f"Successfully generated {OUTPUT_FILE} with {len(payload_list)} valid payloads.")
 
 
 if __name__ == "__main__":
