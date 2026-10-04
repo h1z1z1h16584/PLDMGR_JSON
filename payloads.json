@@ -363,10 +363,10 @@
     },
     {
       "name": "ps5-dualsense-overlay",
-      "filename": "ps5-dualsense-overlay-v1.0.0.elf",
-      "url": "https://github.com/erickdavestech/ps5-dualsense-overlay/releases/download/v1.0.0/ps5-dualsense-overlay-v1.0.0.elf",
-      "description": "ps5-dualsense-overlay v1.0.0 by erickdavestech",
-      "version": "v1.0.0",
+      "filename": "ps5-dualsense-overlay-v1.0.1.elf",
+      "url": "https://github.com/erickdavestech/ps5-dualsense-overlay/releases/download/v1.0.1/ps5-dualsense-overlay-v1.0.1.elf",
+      "description": "ps5-dualsense-overlay v1.0.1 by erickdavestech",
+      "version": "v1.0.1",
       "category": "Controllers & Input"
     }
   ]
