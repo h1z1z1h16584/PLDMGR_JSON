@@ -298,14 +298,6 @@
       "category": "Homebrew"
     },
     {
-      "name": "wfm-7zip-helper",
-      "filename": "wfm-7zip-helper-v26.03-1.elf",
-      "url": "https://github.com/owendswang/wfm-7zip-helper/releases/download/v26.03-1/wfm-7zip-helper-v26.03-1.elf",
-      "description": "Stripped ELF size by owendswang",
-      "version": "v26.03-1",
-      "category": "Homebrew"
-    },
-    {
       "name": "ps5upload",
       "filename": "ps5upload-5.41.0_v5.41.0.elf",
       "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.41.0/ps5upload-5.41.0.elf",
@@ -327,86 +319,6 @@
       "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.26/elfldr-ps5.elf",
       "description": "v0.26 by ps5-payload-dev",
       "version": "v0.26",
-      "category": "Homebrew"
-    },
-    {
-      "name": "ftpsrv",
-      "filename": "ftpsrv-ps5-install_v0.21.1.elf",
-      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5-install.elf",
-      "description": "v0.21.1 by ps5-payload-dev",
-      "version": "v0.21.1",
-      "category": "Homebrew"
-    },
-    {
-      "name": "ftpsrv",
-      "filename": "ftpsrv-ps5_v0.21.1.elf",
-      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
-      "description": "v0.21.1 by ps5-payload-dev",
-      "version": "v0.21.1",
-      "category": "Homebrew"
-    },
-    {
-      "name": "klogsrv",
-      "filename": "klogsrv-ps5_v0.9.elf",
-      "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
-      "description": "v0.9 by ps5-payload-dev",
-      "version": "v0.9",
-      "category": "Homebrew"
-    },
-    {
-      "name": "shsrv",
-      "filename": "shsrv-ps5_v0.20.elf",
-      "url": "https://github.com/ps5-payload-dev/shsrv/releases/download/v0.20/shsrv-ps5.elf",
-      "description": "v0.20 by ps5-payload-dev",
-      "version": "v0.20",
-      "category": "Homebrew"
-    },
-    {
-      "name": "websrv",
-      "filename": "websrv-ps5_v0.34.elf",
-      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.34/websrv-ps5.elf",
-      "description": "v0.34 by ps5-payload-dev",
-      "version": "v0.34",
-      "category": "Homebrew"
-    },
-    {
-      "name": "websrv [Pre-release]",
-      "filename": "websrv-ps5_v0.28 [Pre-release].elf",
-      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.28/websrv-ps5.elf",
-      "description": "v0.28 [Pre-release] by ps5-payload-dev",
-      "version": "v0.28",
-      "category": "Homebrew"
-    },
-    {
-      "name": "zftpd",
-      "filename": "zftpd-ps5-v1.6.0.bin",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-v1.6.0.bin",
-      "description": "zftpd v1.6.0 by seregonwar",
-      "version": "v1.6.0",
-      "category": "Homebrew"
-    },
-    {
-      "name": "zftpd",
-      "filename": "zftpd-ps5-v1.6.0.elf",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-v1.6.0.elf",
-      "description": "zftpd v1.6.0 by seregonwar",
-      "version": "v1.6.0",
-      "category": "Homebrew"
-    },
-    {
-      "name": "zftpd",
-      "filename": "zftpd-ps5-zhttp-v1.6.0.bin",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-zhttp-v1.6.0.bin",
-      "description": "zftpd v1.6.0 by seregonwar",
-      "version": "v1.6.0",
-      "category": "Homebrew"
-    },
-    {
-      "name": "zftpd",
-      "filename": "zftpd-ps5-zhttp-v1.6.0.elf",
-      "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-zhttp-v1.6.0.elf",
-      "description": "zftpd v1.6.0 by seregonwar",
-      "version": "v1.6.0",
       "category": "Homebrew"
     },
     {
