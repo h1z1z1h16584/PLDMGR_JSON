@@ -1,10 +1,9 @@
 # PS5 Payload Manager - Payload Sources
 # --- GitHub repositories ---
-github:VenezuelanBiggie24/Machete-PS5-Backup-Manager
 github:juma-sayeh/PS5-Game-Compressor
 github:tsuramatsu1/apr-emu-updater
-github:ps5-payload-dev/jtplay
-github:n0llptr/Playstation-5-Save-Mounter
+github:earthonion/garlic-savemgr
+github:bizkut/unrar-ps5
 github:aydencharles/onionHEN
 github:pegasus-ps5/pegasus-dl
 github:ItsBlurf/PoorDS4
@@ -12,19 +11,21 @@ github:StonedModder/Ghostcontrol-PS5-USB-Controller-Patcher
 github:Michele-M-Media/PIZZA-HEN
 github:MounirHero/PS-Play
 github:sainsaji/EVO-PLAYER-PS5
-github:seregonwar/MemDBG
-github:BestPig/BackPork
+github:pegasus-ps5/pegasus-dl
+github:Phoenixx1202/Spectrum-Library
+github:kerrdec97/ps5-date-time-sync
+github:blackbearreloaded/ProsperoTV
+github:Pharaoh2k/ps5debug-NG
+github:notmaj0r/CheatRunner
+github:Swordpdf/PS5SX2
 github:drakmor/ftpsrv
 github:drakmor/nanoDNS
 github:drakmor/ShadowMountPlus
-github:EchoStretch/kstuff
 github:EchoStretch/kstuff-lite
-github:EchoStretch/kstuff-toggle
 github:EchoStretch/ps5-app-dumper
 github:etaHEN/etaHEN
-github:ItsBlurf/BFpilot
-github:itsPLK/pldmgr
-github:itsPLK/PS5-Lapy-JB-Daemon
+github:itsPLK/ps5-payload-manager
+github:itsPLK/ps5-pkg-manager
 github:itsPLK/ps5-webkit-autoloader
 github:notmaj0r/CheatRunner
 github:OpenSourcereR-dev/ps5debug-NG
