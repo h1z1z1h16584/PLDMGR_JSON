@@ -1,52 +1,41 @@
-name: Generate Payload Catalog
+name: Generate Payloads
 
 on:
-  workflow_dispatch:
-  push:
-    paths:
-      - "links.txt"
-      - "generate.py"
-      - ".github/workflows/generate.yml"
   schedule:
-    - cron: "0 6 * * *"
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+  push:
+    branches:
+      - main
 
 permissions:
-  contents: write
+  contents: write # Grants permission to commit and push changes back
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.x'
 
-      - name: Generate payload catalog
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install dependencies
         run: |
-          set -euo pipefail
-          python3 generate.py
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # If generate.py uses packages like requests, ensure they are installed:
+          pip install requests
 
-      - name: Commit payload catalog
+      - name: Run payload generator
+        run: python generate.py
+
+      - name: Commit and push changes
         run: |
-          set -euo pipefail
-
-          if git diff --quiet -- payloads.json; then
-            echo "payloads.json unchanged"
-            exit 0
-          fi
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add payloads.json
-          git commit -m "Update payload catalog"
-          git push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update payloads.json" && git push)
