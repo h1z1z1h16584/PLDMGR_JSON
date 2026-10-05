@@ -275,26 +275,26 @@
     },
     {
       "name": "ps5-web-file-manager",
-      "filename": "web-file-mgr-v1.9.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/web-file-mgr-v1.9.elf",
-      "description": "ELF sending support & draging in to upload for PC web browser by owendswang",
-      "version": "v1.9",
+      "filename": "web-file-mgr-v1.10.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.10/web-file-mgr-v1.10.elf",
+      "description": "Added samba support & Other improvements by owendswang",
+      "version": "v1.10",
       "category": "Networking"
     },
     {
       "name": "ps5-web-file-manager",
-      "filename": "wfm-7zip-helper_v1.9.elf",
-      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/wfm-7zip-helper.elf",
-      "description": "ELF sending support & draging in to upload for PC web browser by owendswang",
-      "version": "v1.9",
+      "filename": "wfm-7zip-helper_v1.10.elf",
+      "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.10/wfm-7zip-helper.elf",
+      "description": "Added samba support & Other improvements by owendswang",
+      "version": "v1.10",
       "category": "Networking"
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-5.41.0_v5.41.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.41.0/ps5upload-5.41.0.elf",
-      "description": "v5.41.0 by phantomptr",
-      "version": "v5.41.0",
+      "filename": "ps5upload-6.0.0_v6.0.0.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.0.0/ps5upload-6.0.0.elf",
+      "description": "v6.0.0 by phantomptr",
+      "version": "v6.0.0",
       "category": "System Utilities"
     },
     {
@@ -314,19 +314,11 @@
       "category": "Kernel & Exploitation"
     },
     {
-      "name": "AnyPad-PS5 [Pre-release]",
-      "filename": "AnyPad-PS5-0.5.5-beta_v0.5.5-beta [Pre-release].elf",
-      "url": "https://github.com/sinfiltros/AnyPad-PS5/releases/download/v0.5.5-beta/AnyPad-PS5-0.5.5-beta.elf",
-      "description": "AnyPad PS5 0.5.5-beta (4 Oct 2026) [Pre-release] by sinfiltros",
-      "version": "v0.5.5-beta",
-      "category": "Controllers & Input"
-    },
-    {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v0.6.1.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.6.1/orbit_store.elf",
-      "description": "Orbit Store 0.6.1 (Beta) by saawant12",
-      "version": "v0.6.1",
+      "filename": "orbit_store_v0.7.0.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.7.0/orbit_store.elf",
+      "description": "Orbit Store 0.7.0 (Beta) by saawant12",
+      "version": "v0.7.0",
       "category": "Homebrew"
     },
     {
