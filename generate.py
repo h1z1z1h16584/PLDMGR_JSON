@@ -80,7 +80,7 @@ def fetch_target_releases(repo_slug: str):
     try:
         response = requests.get(url, headers=headers, timeout=15)
         if response.status_code == 404:
-            return None, "HTTP 404 (Repo or releases not found)"
+            return None, "HTTP 404 (Repo or releases not found / deleted)"
         if response.status_code != 200:
             return None, f"HTTP {response.status_code}"
 
@@ -134,6 +134,27 @@ def detect_category(repo_slug: str, filename: str, description: str) -> str:
     return "Homebrew"
 
 
+def load_previous_payloads():
+    """
+    Loads payloads from the existing payloads.json file to preserve items
+    if their upstream repository becomes deleted or inaccessible.
+    """
+    if not os.path.exists(OUTPUT_FILE):
+        return []
+
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, dict):
+                return data.get("payloads", [])
+            elif isinstance(data, list):
+                return data
+    except Exception as e:
+        print(f"[!] Warning: Could not read existing {OUTPUT_FILE}: {e}")
+
+    return []
+
+
 def main():
     if not os.path.exists(LINKS_FILE):
         print(f"Error: {LINKS_FILE} not found.")
@@ -150,6 +171,9 @@ def main():
 
     print(f"Found {len(repos)} repositories to process.")
 
+    # Load existing payloads for fallback preservation
+    previous_payloads = load_previous_payloads()
+
     payload_list = []
     broken_repos = []
     seen_urls = set()
@@ -160,12 +184,30 @@ def main():
         owner, repo_name = repo_slug.split("/")
         releases, err = fetch_target_releases(repo_slug)
 
+        # Fallback helper to find previous working payloads for this repo
+        saved_fallback = [
+            item for item in previous_payloads
+            if item.get("url", "").lower().find(repo_slug.lower()) != -1
+            or item.get("name", "").lower().startswith(repo_name.lower())
+        ]
+
         if err:
-            print(f"[!] Broken repo: {repo_slug} ({err})")
-            broken_repos.append(f"{repo_slug} - {err}")
+            print(f"[!] Broken or deleted repo: {repo_slug} ({err})")
+            if saved_fallback:
+                print(f"[+] Preserving {len(saved_fallback)} previous payload(s) for {repo_slug}")
+                for fb_item in saved_fallback:
+                    dedup_url = fb_item.get("url")
+                    dedup_fname = fb_item.get("filename")
+                    if dedup_url not in seen_urls and dedup_fname not in seen_filenames:
+                        seen_urls.add(dedup_url)
+                        seen_filenames.add(dedup_fname)
+                        payload_list.append(fb_item)
+                broken_repos.append(f"{repo_slug} - {err} (Preserved {len(saved_fallback)} cached payloads)")
+            else:
+                broken_repos.append(f"{repo_slug} - {err} (No previous cache available)")
             continue
 
-        repo_has_valid_assets = False
+        repo_payloads = []
 
         for release in releases:
             is_pre = release.get("prerelease", False)
@@ -184,7 +226,6 @@ def main():
                     print(f"[-] Skipping PS4 asset: {orig_filename}")
                     continue
 
-                repo_has_valid_assets = True
                 base, ext = os.path.splitext(orig_filename)
 
                 if tag_name and tag_name.lower() not in base.lower():
@@ -217,11 +258,24 @@ def main():
                     "version": tag_name if tag_name else "v1.0",
                     "category": category
                 }
-                payload_list.append(payload_entry)
+                repo_payloads.append(payload_entry)
 
-        if not repo_has_valid_assets:
+        if not repo_payloads:
             print(f"[!] No valid payload assets found in {repo_slug}")
-            broken_repos.append(f"{repo_slug} - No valid {VALID_EXTENSIONS} files found in releases")
+            if saved_fallback:
+                print(f"[+] Preserving {len(saved_fallback)} previous payload(s) for {repo_slug}")
+                for fb_item in saved_fallback:
+                    dedup_url = fb_item.get("url")
+                    dedup_fname = fb_item.get("filename")
+                    if dedup_url not in seen_urls and dedup_fname not in seen_filenames:
+                        seen_urls.add(dedup_url)
+                        seen_filenames.add(dedup_fname)
+                        payload_list.append(fb_item)
+                broken_repos.append(f"{repo_slug} - No new valid files (Preserved {len(saved_fallback)} cached payloads)")
+            else:
+                broken_repos.append(f"{repo_slug} - No valid {VALID_EXTENSIONS} files found in releases")
+        else:
+            payload_list.extend(repo_payloads)
 
     # Output payloads.json with mandatory top-level "name" first
     output_data = {
