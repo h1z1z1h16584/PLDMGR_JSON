@@ -298,6 +298,14 @@
       "category": "System Utilities"
     },
     {
+      "name": "ps5upload [Pre-release]",
+      "filename": "ps5upload-6.2.1_v6.2.1 [Pre-release].elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.2.1/ps5upload-6.2.1.elf",
+      "description": "v6.2.1 [Pre-release] by phantomptr",
+      "version": "v6.2.1",
+      "category": "System Utilities"
+    },
+    {
       "name": "ps5-linux-loader",
       "filename": "ps5-linux-loader_v2.5.elf",
       "url": "https://github.com/ps5-linux/ps5-linux-loader/releases/download/v2.5/ps5-linux-loader.elf",
@@ -323,10 +331,10 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v0.7.0.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.7.0/orbit_store.elf",
-      "description": "Orbit Store 0.7.0 (Beta) by saawant12",
-      "version": "v0.7.0",
+      "filename": "orbit_store_v0.8.0.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.8.0/orbit_store.elf",
+      "description": "Orbit Store 0.8.0 (Beta) by saawant12",
+      "version": "v0.8.0",
       "category": "Homebrew"
     },
     {
