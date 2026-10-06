@@ -39,5 +39,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add payloads.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update payloads.json [skip ci]" && git push)
+          git add payloads.json broken_repos.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update payloads and broken repos [skip ci]" && git push)
