@@ -139,18 +139,18 @@
     },
     {
       "name": "PS5SX2",
-      "filename": "PS5SX2Installer_vk-285-128.elf",
-      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-128/PS5SX2Installer.elf",
-      "description": "PS5SX2 1.85 by Swordpdf",
-      "version": "vk-285-128",
+      "filename": "PS5SX2Installer_vk-285-130.elf",
+      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-130/PS5SX2Installer.elf",
+      "description": "PS5SX2 1.9 by Swordpdf",
+      "version": "vk-285-130",
       "category": "Homebrew"
     },
     {
       "name": "PS5SX2",
-      "filename": "PS5SXHelper_vk-285-128.elf",
-      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-128/PS5SXHelper.elf",
-      "description": "PS5SX2 1.85 by Swordpdf",
-      "version": "vk-285-128",
+      "filename": "PS5SXHelper_vk-285-130.elf",
+      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-130/PS5SXHelper.elf",
+      "description": "PS5SX2 1.9 by Swordpdf",
+      "version": "vk-285-130",
       "category": "Homebrew"
     },
     {
@@ -291,10 +291,10 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.0.0_v6.0.0.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.0.0/ps5upload-6.0.0.elf",
-      "description": "v6.0.0 by phantomptr",
-      "version": "v6.0.0",
+      "filename": "ps5upload-6.1.1_v6.1.1.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.1.1/ps5upload-6.1.1.elf",
+      "description": "v6.1.1 by phantomptr",
+      "version": "v6.1.1",
       "category": "System Utilities"
     },
     {
