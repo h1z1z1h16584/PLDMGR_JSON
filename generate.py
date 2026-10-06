@@ -31,9 +31,9 @@ import requests
 GITHUB_API = "https://api.github.com"
 LINKS_FILE = "links.txt"
 OUTPUT_FILE = "payloads.json"
+BROKEN_REPOS_FILE = "broken_repos.txt"
 REPO_CATALOG_NAME = "Custom Payloads"
 
-# Allowed payload binary formats
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
 
 token = os.getenv("GITHUB_TOKEN")
@@ -47,6 +47,7 @@ if token:
 def parse_repo_identifier(line: str):
     """
     Extracts 'owner/repo' from:
+      - etawen:owner/repo
       - github:owner/repo
       - git@github.com:owner/repo
       - https://github.com/owner/repo
@@ -57,7 +58,7 @@ def parse_repo_identifier(line: str):
         return None
 
     cleaned = re.sub(
-        r"^(?:https?://github\.com/|git@github\.com:|github:)",
+        r"^(?:https?://github\.com/|git@github\.com:|github:|etawen:)",
         "",
         line,
         flags=re.IGNORECASE,
@@ -72,18 +73,20 @@ def parse_repo_identifier(line: str):
 
 def fetch_target_releases(repo_slug: str):
     """
-    Fetches the latest official (stable) release and the latest pre-release.
+    Fetches the latest official release and the latest pre-release.
+    Returns (targets, error_message).
     """
     url = f"{GITHUB_API}/repos/{repo_slug}/releases"
     try:
         response = requests.get(url, headers=headers, timeout=15)
+        if response.status_code == 404:
+            return None, "HTTP 404 (Repo or releases not found)"
         if response.status_code != 200:
-            print(f"[!] Error fetching {repo_slug}: HTTP {response.status_code}")
-            return []
+            return None, f"HTTP {response.status_code}"
 
         releases = response.json()
         if not isinstance(releases, list):
-            return []
+            return None, "Invalid API payload format"
 
         latest_prerelease = next(
             (r for r in releases if r.get("prerelease") and not r.get("draft")), None
@@ -98,25 +101,21 @@ def fetch_target_releases(repo_slug: str):
         if latest_prerelease:
             targets.append(latest_prerelease)
 
-        return targets
+        if not targets:
+            return None, "No published releases found"
+
+        return targets, None
 
     except requests.exceptions.RequestException as e:
-        print(f"[!] Network error for {repo_slug}: {e}")
-        return []
+        return None, f"Network error: {str(e)}"
 
 
 def is_ps4_asset(filename: str) -> bool:
-    """
-    Checks if an asset is explicitly intended for PS4.
-    """
     name_lower = filename.lower()
     return "ps4" in name_lower and "ps5" not in name_lower
 
 
 def detect_category(repo_slug: str, filename: str, description: str) -> str:
-    """
-    Determines an appropriate category based on keywords in repo name, filename, and description.
-    """
     search_text = f"{repo_slug} {filename} {description}".lower()
 
     if any(k in search_text for k in ["ftp", "zftpd", "dns", "web", "websrv", "http", "server", "shsrv", "network"]):
@@ -152,13 +151,21 @@ def main():
     print(f"Found {len(repos)} repositories to process.")
 
     payload_list = []
+    broken_repos = []
     seen_urls = set()
     seen_filenames = set()
 
     for repo_slug in repos:
         print(f"Fetching releases for: {repo_slug}")
         owner, repo_name = repo_slug.split("/")
-        releases = fetch_target_releases(repo_slug)
+        releases, err = fetch_target_releases(repo_slug)
+
+        if err:
+            print(f"[!] Broken repo: {repo_slug} ({err})")
+            broken_repos.append(f"{repo_slug} - {err}")
+            continue
+
+        repo_has_valid_assets = False
 
         for release in releases:
             is_pre = release.get("prerelease", False)
@@ -170,18 +177,16 @@ def main():
                 orig_filename = asset.get("name", "")
                 download_url = asset.get("browser_download_url", "")
 
-                # 1. Filter: Valid payload extension
                 if not orig_filename.lower().endswith(VALID_EXTENSIONS):
                     continue
 
-                # 2. Filter: Discard PS4-specific binaries
                 if is_ps4_asset(orig_filename):
                     print(f"[-] Skipping PS4 asset: {orig_filename}")
                     continue
 
+                repo_has_valid_assets = True
                 base, ext = os.path.splitext(orig_filename)
 
-                # Append version tag to the binary filename if missing
                 if tag_name and tag_name.lower() not in base.lower():
                     base_with_version = f"{base}_{tag_name}"
                 else:
@@ -196,14 +201,12 @@ def main():
                     file_name = f"{base_with_version}{ext}"
                     desc = f"{release_title} by {owner}"
 
-                # 3. Deduplication
                 if download_url in seen_urls or file_name in seen_filenames:
                     continue
 
                 seen_urls.add(download_url)
                 seen_filenames.add(file_name)
 
-                # Determine payload category dynamically
                 category = detect_category(repo_slug, orig_filename, desc)
 
                 payload_entry = {
@@ -216,7 +219,11 @@ def main():
                 }
                 payload_list.append(payload_entry)
 
-    # Required top-level structure: "name" must appear before "payloads"
+        if not repo_has_valid_assets:
+            print(f"[!] No valid payload assets found in {repo_slug}")
+            broken_repos.append(f"{repo_slug} - No valid {VALID_EXTENSIONS} files found in releases")
+
+    # Output payloads.json with mandatory top-level "name" first
     output_data = {
         "name": REPO_CATALOG_NAME,
         "payloads": payload_list
@@ -225,7 +232,13 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
 
-    print(f"Successfully generated {OUTPUT_FILE} with {len(payload_list)} valid payloads.")
+    # Output broken_repos.txt
+    with open(BROKEN_REPOS_FILE, "w", encoding="utf-8") as f:
+        for entry in broken_repos:
+            f.write(f"{entry}\n")
+
+    print(f"Generated {OUTPUT_FILE} with {len(payload_list)} valid payloads.")
+    print(f"Logged {len(broken_repos)} unreachable/empty repos to {BROKEN_REPOS_FILE}.")
 
 
 if __name__ == "__main__":
