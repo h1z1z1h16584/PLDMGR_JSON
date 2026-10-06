@@ -314,6 +314,14 @@
       "category": "Kernel & Exploitation"
     },
     {
+      "name": "AnyPad-PS5-English",
+      "filename": "AnyPad-PS5-0.5.5-beta.elf",
+      "url": "https://github.com/Mohammad-Aghayan/AnyPad-PS5-English/releases/download/AnyPad/AnyPad-PS5-0.5.5-beta.elf",
+      "description": "0.5.5-beta by Mohammad-Aghayan",
+      "version": "AnyPad",
+      "category": "Controllers & Input"
+    },
+    {
       "name": "orbit-store-ps5",
       "filename": "orbit_store_v0.7.0.elf",
       "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.7.0/orbit_store.elf",
