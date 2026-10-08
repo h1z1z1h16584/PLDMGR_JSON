@@ -259,10 +259,10 @@
     },
     {
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.6.0.elf",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0/webkit-autoloader-installer_v0.6.0.elf",
-      "description": "v0.6.0 by itsPLK",
-      "version": "v0.6.0",
+      "filename": "webkit-autoloader-installer_v0.6.1.elf",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf",
+      "description": "v0.6.1 by itsPLK",
+      "version": "v0.6.1",
       "category": "Networking"
     },
     {
@@ -331,10 +331,10 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v0.9.0.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.9.0/orbit_store.elf",
-      "description": "Orbit Store 0.9.0 (Beta) by saawant12",
-      "version": "v0.9.0",
+      "filename": "orbit_store_v0.9.1.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v0.9.1/orbit_store.elf",
+      "description": "Orbit Store 0.9.1 (Beta) by saawant12",
+      "version": "v0.9.1",
       "category": "Homebrew"
     },
     {
