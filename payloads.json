@@ -291,18 +291,18 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.7.3_v6.7.3.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.7.3/ps5upload-6.7.3.elf",
-      "description": "v6.7.3 by phantomptr",
-      "version": "v6.7.3",
+      "filename": "ps5upload-6.7.4_v6.7.4.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.7.4/ps5upload-6.7.4.elf",
+      "description": "v6.7.4 by phantomptr",
+      "version": "v6.7.4",
       "category": "System Utilities"
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-6.7.2_v6.7.2 [Pre-release].elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.7.2/ps5upload-6.7.2.elf",
-      "description": "v6.7.2 [Pre-release] by phantomptr",
-      "version": "v6.7.2",
+      "filename": "ps5upload-6.8.0_v6.8.0 [Pre-release].elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.8.0/ps5upload-6.8.0.elf",
+      "description": "v6.8.0 [Pre-release] by phantomptr",
+      "version": "v6.8.0",
       "category": "System Utilities"
     },
     {
