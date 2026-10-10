@@ -59,10 +59,10 @@
     },
     {
       "name": "pegasus-dl",
-      "filename": "pegasus_dl_v1.10.1.elf",
-      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.1/pegasus_dl.elf",
-      "description": "Pegasus DL 1.10.1 by pegasus-ps5",
-      "version": "v1.10.1",
+      "filename": "pegasus_dl_v1.11.0.elf",
+      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.11.0/pegasus_dl.elf",
+      "description": "Pegasus DL 1.11.0 by pegasus-ps5",
+      "version": "v1.11.0",
       "category": "Homebrew"
     },
     {
