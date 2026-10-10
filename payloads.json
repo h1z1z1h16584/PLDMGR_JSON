@@ -123,10 +123,10 @@
     },
     {
       "name": "CheatRunner",
-      "filename": "CheatRunner_v0.17.2.elf",
-      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.17.2/CheatRunner.elf",
-      "description": "v0.17.2 by notmaj0r",
-      "version": "v0.17.2",
+      "filename": "CheatRunner_v0.18.elf",
+      "url": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.18/CheatRunner.elf",
+      "description": "v0.18 by notmaj0r",
+      "version": "v0.18",
       "category": "Cheats"
     },
     {
@@ -179,10 +179,10 @@
     },
     {
       "name": "ShadowMountPlus",
-      "filename": "shadowmountplus_1.7beta3.elf",
-      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta3/shadowmountplus.elf",
-      "description": "ShadowMountPlus 1.7beta3 by drakmor",
-      "version": "1.7beta3",
+      "filename": "shadowmountplus_1.7beta5.elf",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta5/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta5 by drakmor",
+      "version": "1.7beta5",
       "category": "System Utilities"
     },
     {
@@ -235,10 +235,10 @@
     },
     {
       "name": "ps5-pkg-manager",
-      "filename": "pkg-manager_v1.5.0.elf",
-      "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.5.0/pkg-manager_v1.5.0.elf",
-      "description": "v1.5.0 by itsPLK",
-      "version": "v1.5.0",
+      "filename": "pkg-manager_v1.5.1.elf",
+      "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.5.1/pkg-manager_v1.5.1.elf",
+      "description": "v1.5.1 by itsPLK",
+      "version": "v1.5.1",
       "category": "System Utilities"
     },
     {
@@ -283,18 +283,18 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.7.4_v6.7.4.elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.7.4/ps5upload-6.7.4.elf",
-      "description": "v6.7.4 by phantomptr",
-      "version": "v6.7.4",
+      "filename": "ps5upload-6.8.2_v6.8.2.elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.8.2/ps5upload-6.8.2.elf",
+      "description": "v6.8.2 by phantomptr",
+      "version": "v6.8.2",
       "category": "System Utilities"
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-6.8.1_v6.8.1 [Pre-release].elf",
-      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.8.1/ps5upload-6.8.1.elf",
-      "description": "v6.8.1 [Pre-release] by phantomptr",
-      "version": "v6.8.1",
+      "filename": "ps5upload-6.8.0_v6.8.0 [Pre-release].elf",
+      "url": "https://github.com/phantomptr/ps5upload/releases/download/v6.8.0/ps5upload-6.8.0.elf",
+      "description": "v6.8.0 [Pre-release] by phantomptr",
+      "version": "v6.8.0",
       "category": "System Utilities"
     },
     {
