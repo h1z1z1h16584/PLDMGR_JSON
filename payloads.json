@@ -139,10 +139,10 @@
     },
     {
       "name": "PS5SX2",
-      "filename": "ps5sx2-aio_vk-285-161.elf",
-      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-161/ps5sx2-aio.elf",
-      "description": "PS5SX2 2.01 by Swordpdf",
-      "version": "vk-285-161",
+      "filename": "ps5sx2-aio_vk-285-162.elf",
+      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-162/ps5sx2-aio.elf",
+      "description": "PS5SX2 2.02 by Swordpdf",
+      "version": "vk-285-162",
       "category": "Homebrew"
     },
     {
@@ -323,10 +323,10 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v1.0.5.elf",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.0.5/orbit_store.elf",
-      "description": "Orbit Store 1.0.5 (Beta) by saawant12",
-      "version": "v1.0.5",
+      "filename": "orbit_store_v1.1.0.elf",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.1.0/orbit_store.elf",
+      "description": "Orbit Store 1.1.0 (Beta) by saawant12",
+      "version": "v1.1.0",
       "category": "Homebrew"
     },
     {
